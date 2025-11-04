@@ -9,7 +9,7 @@ import HackscateIcon from "@/components/icons/HackscateIcon.astro";
             class="flex items-center justify-center max-w-6xl w-full"
             aria-label="Landing page"
         >
-            <div class="flex gap-8 items-center">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
                 <header class="flex flex-col gap-4">
                     <h1 class="text-5xl md:text-7xl lg:text-8xl text-primary">
                         Hackscate
@@ -23,9 +23,7 @@ import HackscateIcon from "@/components/icons/HackscateIcon.astro";
                     class="flex items-center justify-center pl-5"
                     aria-label="Hackscate logo"
                 >
-                    <div class="w-full max-w-md lg:max-w-lg xl:max-w-xl">
-                        <HackscateIcon iconSize={190} />
-                    </div>
+                    <HackscateIcon className="size-36 md:size-[190px]" />
                 </figure>
             </div>
         </section>

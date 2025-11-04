@@ -1,15 +1,13 @@
 ---
 interface Props {
-    iconSize?: number;
+    className?: string;
 }
 
-const { iconSize = 24 } = Astro.props as Props;
+const { className } = Astro.props as Props;
 ---
 
-
 <svg
-    width={`${iconSize}`}
-    height={`${iconSize}`}
+    class={`size-6 ${className}`}
     viewBox="0 0 500 500"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
