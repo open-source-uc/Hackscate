@@ -39,7 +39,7 @@ const sponsorshipLevels = {
             class="flex-1 flex flex-col gap-15 md:px-20 lg:px-0 lg:pl-10 lg:max-w-2xl xl:max-w-4xl [&>section]:flex [&>section]:flex-col [&>section]:gap-4 [&>section]:p-6"
         >
             <section id="introduction">
-                <h1 class="text-4xl font-bold mb-4">About us</h1>
+                <h1 class="text-4xl font-bold">About us</h1>
                 <p>
                     Open Source UC (OSUC) is the student tech-innovation
                     community of Pontificia Universidad Católica de Chile (UC).
@@ -53,7 +53,7 @@ const sponsorshipLevels = {
                 <p>Today, we want to expand our impact alongside Hackscate.</p>
             </section>
             <section id="hackscate-event" class="relative">
-                <h1 class="text-4xl font-bold mb-4">The Event</h1>
+                <h1 class="text-4xl font-bold">The Event</h1>
                 <p>
                     The Event Hackscate will be the place for students - across
                     careers and levels - to build a tech product together.
@@ -66,10 +66,12 @@ const sponsorshipLevels = {
                 </p>
 
                 <p>Hackscate will be taking place Friday, December 5th</p>
-                <div class="grid grid-cols-2 p-6 border-2 rounded-xl">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 p-6 border-2 rounded-xl"
+                >
                     <a
                         href="https://centrodeextension.uc.cl/en/nuestros_centros/centro-de-extension-campus-oriente/"
-                        class="hover:scale-105 transition-transform"
+                        class="hover:scale-105 transition-transform flex justify-center"
                         ><img
                             src="https://www.uc.cl/site/assets/files/11631/oriente.jpg"
                             alt=""
@@ -92,7 +94,7 @@ const sponsorshipLevels = {
                 </div>
             </section>
             <section id="attendee-profile">
-                <h1 class="text-4xl font-bold mb-4">Our Attendee Profile</h1>
+                <h1 class="text-4xl font-bold">Our Attendee Profile</h1>
                 <ol class="flex flex-col gap-4 list-none">
                     <NumberedCard
                         number={1}
@@ -112,11 +114,11 @@ const sponsorshipLevels = {
                 </ol>
             </section>
             <section id="prospective-matrix">
-                <h1 class="text-4xl font-bold mb-4">Prospective Matrix</h1>
+                <h1 class="text-4xl font-bold">Prospective Matrix</h1>
                 <SponsorshipTable levels={sponsorshipLevels} />
             </section>
             <section id="contact">
-                <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+                <h1 class="text-4xl font-bold">Contact Us</h1>
                 <p>
                     If you have any questions or inquiries, feel free to reach
                     out to us <a
