@@ -1,41 +1,45 @@
 ---
-import OsucIcon from "@components/icons/OsucIcon.astro"
+import HackscateIcon from "@components/icons/HackscateIcon.astro";
 interface Props {
     list_items: Array<{
-        id: string,
-        title: string,
-    }>
+        id: string;
+        title: string;
+    }>;
 }
 
 const { list_items } = Astro.props as Props;
 ---
 
 <aside class="sidebar-container flex flex-col gap-6">
-    <h2 class="text-3xl"><a href="/"><OsucIcon  iconSize={64}/> Hackscate</a></h2>
+    <h2 class="text-3xl">
+        <a href="/"><HackscateIcon iconSize={64} /> Hackscate</a>
+    </h2>
     <nav class="sticky top-0 flex flex-col gap-2" data-sidebar-nav>
-        {list_items.map(item => (
-            <a 
-                href={`#${item.id}`} 
-                data-section-id={item.id}
-                class="sidebar-link p-2 transition-all duration-200"
-            >
-                {item.title}
-            </a>
-        ))}
+        {
+            list_items.map((item) => (
+                <a
+                    href={`#${item.id}`}
+                    data-section-id={item.id}
+                    class="sidebar-link p-2 transition-all duration-200"
+                >
+                    {item.title}
+                </a>
+            ))
+        }
     </nav>
 </aside>
 
 <script>
     // Este script se ejecuta una sola vez en el cliente
     function initSidebarObserver() {
-        const nav = document.querySelector('[data-sidebar-nav]') as HTMLElement;
+        const nav = document.querySelector("[data-sidebar-nav]") as HTMLElement;
         if (!nav) return;
 
-        const links = nav.querySelectorAll<HTMLAnchorElement>('.sidebar-link');
+        const links = nav.querySelectorAll<HTMLAnchorElement>(".sidebar-link");
         const sections = new Map<string, Element>();
 
         // Recolectar todas las secciones
-        links.forEach(link => {
+        links.forEach((link) => {
             const id = link.dataset.sectionId;
             if (id) {
                 const section = document.getElementById(id);
@@ -48,54 +52,67 @@ const { list_items } = Astro.props as Props;
         // Configurar el Intersection Observer
         const observerOptions: IntersectionObserverInit = {
             root: null,
-            rootMargin: '0px 0px -100% 0px',
-            threshold: 0
+            rootMargin: "0px 0px -100% 0px",
+            threshold: 0,
         };
 
         let activeId: string | null = null;
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const id = entry.target.id;
-                    
+
                     // Remover clases active de todos los links
-                    links.forEach(link => {
-                        link.classList.remove('bg-[#138DFF]', 'text-white', 'font-semibold');
+                    links.forEach((link) => {
+                        link.classList.remove(
+                            "bg-accent",
+                            "text-background",
+                            "font-semibold",
+                        );
                     });
-                    
+
                     // Agregar clases active al link correspondiente
-                    const activeLink = nav.querySelector(`[data-section-id="${id}"]`);
+                    const activeLink = nav.querySelector(
+                        `[data-section-id="${id}"]`,
+                    );
                     if (activeLink) {
-                        activeLink.classList.add('bg-[#138DFF]', 'text-white', 'font-semibold');
+                        activeLink.classList.add(
+                            "bg-accent",
+                            "text-background",
+                            "font-semibold",
+                        );
                         activeId = id;
                     }
                 }
             });
         }, observerOptions);
 
-        sections.forEach(section => observer.observe(section));
+        sections.forEach((section) => observer.observe(section));
 
-        links.forEach(link => {
-            link.addEventListener('click', (e) => {
+        links.forEach((link) => {
+            link.addEventListener("click", (e) => {
                 e.preventDefault();
                 const id = link.dataset.sectionId;
                 if (id) {
                     const target = document.getElementById(id);
                     if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        history.pushState(null, '', `#${id}`);
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                        history.pushState(null, "", `#${id}`);
                     }
                 }
             });
         });
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initSidebarObserver);
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initSidebarObserver);
     } else {
         initSidebarObserver();
     }
 
-    document.addEventListener('astro:page-load', initSidebarObserver);
+    document.addEventListener("astro:page-load", initSidebarObserver);
 </script>

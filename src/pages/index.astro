@@ -1,10 +1,35 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import HackscateIcon from "@/components/icons/HackscateIcon.astro";
 ---
 
 <Layout title="WIP">
-    <main class="bg-black flex flex-col h-screen items-center justify-center">
-        <h1 class="text-5xl md:text-7xl text-white text-shadow-[0_0_40px_rgb(19_141_255/0.6),0_0_80px_rgb(19_141_255/0.4)]">Hackscate</h1>
-        <p class="text-2xl md:text-4xl text-gray-400 text-shadow-[0_0_30px_rgb(19_141_255/0.5),0_0_60px_rgb(19_141_255/0.3)]">Work in progress</p>
+    <main class="bg-background h-dvh flex items-center justify-center p-8">
+        <section
+            class="flex items-center justify-center max-w-6xl w-full"
+            aria-label="Landing page"
+        >
+            <div class="flex gap-8 items-center">
+                <!-- Text content -->
+                <header class="flex flex-col gap-4">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl text-primary">
+                        Hackscate
+                    </h1>
+                    <p class="text-2xl md:text-4xl lg:text-5xl text-primary/60">
+                        Work in progress
+                    </p>
+                </header>
+
+                <!-- Logo -->
+                <figure
+                    class="flex items-center justify-center pl-5"
+                    aria-label="Hackscate logo"
+                >
+                    <div class="w-full max-w-md lg:max-w-lg xl:max-w-xl">
+                        <HackscateIcon iconSize={190} />
+                    </div>
+                </figure>
+            </div>
+        </section>
     </main>
 </Layout>

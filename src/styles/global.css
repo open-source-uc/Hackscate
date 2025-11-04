@@ -3,12 +3,17 @@
 
 @theme {
     --font-sans: 'Mona Sans', system-ui, sans-serif;
+
+    /* Custom Color Tokens */
+    --color-primary: var(--color-text-primary);
+    --color-background: var(--color-bg-primary);
+    --color-accent: var(--color-accent-blue);
 }
 
 html {
-	font-family: var(--font-sans);
+    font-family: var(--font-sans);
 }
 
 body {
-	min-height: 100vh;
+    min-height: 100vh;
 }

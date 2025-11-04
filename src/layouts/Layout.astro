@@ -1,25 +1,32 @@
 ---
 import "@/styles/global.css";
+import NavBar from "@/components/Navbar.astro";
 
 interface Props {
-	title?: string;
-	description?: string;
+    title?: string;
+    description?: string;
+    activeNavBar?: boolean;
 }
 
-const { title = 'Hackscate', description = 'Hackaton Osuc - Hackscate' } = Astro.props;
+const {
+    title = "Hackscate",
+    description = "Hackaton Osuc - Hackscate",
+    activeNavBar = true,
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content={description} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        {activeNavBar && <NavBar />}
+        <slot />
+    </body>
 </html>
