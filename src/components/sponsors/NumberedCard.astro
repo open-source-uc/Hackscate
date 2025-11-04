@@ -1,0 +1,17 @@
+---
+interface Props {
+    number: number;
+    title: string;
+    description: string;
+}
+
+const { number, title, description } = Astro.props;
+const formattedNumber = number.toString().padStart(2, '0');
+---
+
+<li class="border-2 border-[#D9D9D9] p-6 rounded-xl flex flex-col gap-3">
+    <span class="text-sm font-medium">{formattedNumber}.</span>
+    <h2 class="text-2xl font-bold">{title}</h2>
+    <div class="w-full h-px bg-amber-50" />
+    <p>{description}</p>
+</li>
