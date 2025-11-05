@@ -17,3 +17,13 @@ html {
 body {
     min-height: 100vh;
 }
+
+.esquina-cortada {
+    clip-path: polygon(min(15%, 30px) 0%,
+            100% 0%,
+            100% calc(100% - min(25%, 50px)),
+            calc(100% - min(15%, 30px)) 100%,
+            0% 100%,
+            0% min(25%, 50px));
+
+}

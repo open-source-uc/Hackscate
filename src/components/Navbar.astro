@@ -2,14 +2,33 @@
 import HackscateIcon from "./icons/HackscateIcon.astro";
 ---
 
-<nav
-    class="bg-background text-primary fixed top-0 p-3 flex justify-between w-dvw"
->
-    <a href="/" class="flex items-center gap-2">
-        <HackscateIcon className="size-10" />
-    </a>
-    <ul class="flex text-lg gap-4">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/sponsors">Sponsors</a></li>
-    </ul>
-</nav>
+<header class="bg-transparent text-primary fixed w-dvw p-4 z-50" role="banner">
+    <div class="esquina-cortada bg-white p-0.5">
+        <div
+            class="relative bg-black flex px-6 py-3 justify-between overflow-hidden esquina-cortada items-center"
+        >
+            <nav class="flex items-center" aria-label="Navegación principal">
+                <a
+                    href="/"
+                    class="flex items-center gap-2"
+                    aria-label="Ir al inicio - Hackscate"
+                >
+                    <HackscateIcon className="size-6 md:size-10" />
+                </a>
+                <ul
+                    class="flex text-lg gap-8 [&>li]:flex [&>li]:items-center pl-8 [&>li>a]:font-semibold [&>li>a]:text-lg"
+                >
+                    <li><a href="/" aria-current="page">Inicio</a></li>
+                    <li><a href="/sponsors">Sponsors</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <a
+                href="/join"
+                class="text-black bg-white pl-4 pr-3 py-1 esquina-cortada font-semibold"
+                role="button"
+                aria-label="Únete al evento hoy">JOIN TODAY</a
+            >
+        </div>
+    </div>
+</header>
