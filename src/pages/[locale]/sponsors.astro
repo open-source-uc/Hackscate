@@ -29,7 +29,7 @@ export async function getStaticPaths() {
         <div
             class="hidden lg:inline p-6 border-r sticky top-0 h-screen overflow-y-auto min-w-60"
         >
-            <Sidebar list_items={sections} />
+            <Sidebar list_items={sections} lang={lang} />
         </div>
         <main
             class="flex flex-col gap-10 md:px-20 lg:px-0 lg:pl-10 lg:max-w-2xl xl:max-w-4xl [&>section]:flex [&>section]:flex-col [&>section]:gap-4 [&>section]:p-6"
