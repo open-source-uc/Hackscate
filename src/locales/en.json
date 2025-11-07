@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "registration": "REGISTRATION SOON",
+        "home": "Home",
+        "sponsors": "Sponsors",
+        "faq": "FAQ"
+    },
+    "home": {
+        "layout_title": "WIP",
+        "header": "Hackscate",
+        "subheader": "Work in progress"
+    },
+    "sponsors": {
+        "layout_title": "Sponsors",
+        "layout_description": "Explore sponsorship opportunities with Hackscate",
+        "sidebar": [
+            {
+                "id": "introduction",
+                "title": "About us"
+            },
+            {
+                "id": "hackscate-event",
+                "title": "The Event"
+            },
+            {
+                "id": "attendee-profile",
+                "title": "Our Attendee Profile"
+            },
+            {
+                "id": "prospective-matrix",
+                "title": "Prospective Matrix"
+            },
+            {
+                "id": "contact",
+                "title": "Contact Us"
+            }
+        ],
+        "introduction_section": {
+            "title": "About us",
+            "p1": "Open Source UC (OSUC) is the student tech-innovation community of Pontificia Universidad Católica de Chile (UC).",
+            "p2": "Since 2006, we have driven innovation projects from students to students.",
+            "p3": "Today, we want to expand our impact alongside Hackscate."
+        },
+        "event_section": {
+            "title": "The Event",
+            "p1": "The Event Hackscate will be the place for students - across careers and levels - to build a tech product together.",
+            "p2": "The event will focus on the student community at UC-Chile; we expect 60 innovators at our venue, Centro de Extensión, Campus Oriente, UC-Chile.",
+            "p3": "Hackscate will be taking place Friday, December 5th.",
+            "venue_title": "Centro de Extensión",
+            "venue_location": "Campus Oriente, PUC"
+        },
+        "profile_section": {
+            "title": "Our Attendee Profile",
+            "card1_title": "Eager to learn and try new products",
+            "card1_desc": "Our attendees are early adopters who actively seek out cutting-edge tools and technologies. As we have seen with previous sponsors like GitHub, ~70% of students jumped to try GitHub Copilot.",
+            "card2_title": "Builders and Problems-Solvers",
+            "card2_desc": "They're collaborative hands-on developers who transform ideas into working prototypes in 9 hours.",
+            "card3_title": "Soon to graduate",
+            "card3_desc": "Most attendees are in their final years of study, with strong academic backgrounds and hands-on project experience. ~40% are actively seeking internships or full-time roles."
+        },
+        "matrix_section": {
+            "title": "Prospective Matrix",
+            "table_data": {
+                "title": "Unique Sponsorship Level",
+                "price": "$500 USD",
+                "benefits": [
+                    {
+                        "name": "Recognition at Opening Ceremony"
+                    },
+                    {
+                        "name": "Logo on Website"
+                    },
+                    {
+                        "name": "Social Media Promotion"
+                    },
+                    {
+                        "name": "Send Mentors/Company Representatives"
+                    },
+                    {
+                        "name": "Access to Attendee Database"
+                    },
+                    {
+                        "name": "On-site Brand Activation"
+                    }
+                ]
+            }
+        },
+        "contact_section": {
+            "title": "Contact Us",
+            "p1_start": "If you have any questions or inquiries, feel free to reach out to us ",
+            "p1_end": "!"
+        }
+    },
+    "footer": {
+        "made_by": "Made with ❤️ by Open Source UC",
+        "change_to": "Cambiar a Español"
+    }
+}

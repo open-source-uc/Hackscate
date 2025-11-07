@@ -1,22 +1,25 @@
 ---
 import "@/styles/global.css";
 import NavBar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
 
 interface Props {
     title?: string;
     description?: string;
     activeNavBar?: boolean;
+    lang: "es" | "en";
 }
 
 const {
     title = "Hackscate",
     description = "Hackaton Osuc - Hackscate",
+    lang,
     activeNavBar = true,
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +30,8 @@ const {
         <title>{title}</title>
     </head>
     <body class="relative">
-        {activeNavBar && <NavBar />}
+        {activeNavBar && <NavBar lang={lang} />}
         <slot />
+        <Footer lang={lang} />
     </body>
 </html>

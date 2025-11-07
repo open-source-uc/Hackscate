@@ -1,0 +1,29 @@
+---
+import OsucIcon from "./icons/OsucIcon.astro";
+import { useTranslations } from "@/i18n/utils";
+
+interface Props {
+    lang: "es" | "en";
+}
+
+const urlWithoutLocale = Astro.url.pathname.split("/").slice(2).join("/");
+const { lang = "en" } = Astro.props;
+const t = useTranslations(lang);
+const f = t("footer");
+---
+
+<footer
+    class="flex w-full justify-center bg-background p-6 text-primary/60 gap-4 border-t"
+>
+    <OsucIcon />
+    <p class="text-sm self-center">
+        {f.made_by}
+    </p>
+    <a
+        href={lang == "en"
+            ? `/es/${urlWithoutLocale}`
+            : `/en/${urlWithoutLocale}`}
+        class="hover:text-primary"
+        >{f.change_to}
+    </a>
+</footer>
