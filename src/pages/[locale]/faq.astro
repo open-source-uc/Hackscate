@@ -1,0 +1,17 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { getLangFromUrl } from "@/i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+
+export async function getStaticPaths() {
+    return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
+}
+---
+
+<Layout title="FAQ" lang={lang}>
+    <main class="bg-background flex justify-center h-screen items-center">
+        <h1 class="text-4xl text-primary">FAQ</h1>
+    </main>
+</Layout>

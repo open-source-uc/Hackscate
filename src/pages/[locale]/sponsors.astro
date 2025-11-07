@@ -1,0 +1,110 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Sidebar from "@/components/sponsors/Sidebar.astro";
+import NumberedCard from "@/components/sponsors/NumberedCard.astro";
+import SponsorshipTable from "@/components/sponsors/SponsorshipTable.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const s = t("sponsors");
+
+const sections = s.sidebar;
+const sponsorshipLevels = s.matrix_section.table_data;
+
+export async function getStaticPaths() {
+    return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
+}
+---
+
+<Layout
+    title={s.layout_title}
+    lang={lang}
+    activeNavBar={false}
+    description={s.layout_description}
+>
+    <div
+        class="flex min-h-screen px-5 md:px-5 xl:px-40 text-primary bg-background justify-center"
+    >
+        <div
+            class="hidden lg:inline p-6 border-r sticky top-0 h-screen overflow-y-auto min-w-60"
+        >
+            <Sidebar list_items={sections} lang={lang} />
+        </div>
+        <main
+            class="flex flex-col gap-10 md:px-20 lg:px-0 lg:pl-10 lg:max-w-2xl xl:max-w-4xl [&>section]:flex [&>section]:flex-col [&>section]:gap-4 [&>section]:p-6"
+        >
+            <section id="introduction">
+                <h1 class="text-4xl font-bold">
+                    {s.introduction_section.title}
+                </h1>
+                <p>{s.introduction_section.p1}</p>
+                <p>{s.introduction_section.p2}</p>
+                <p>{s.introduction_section.p3}</p>
+            </section>
+            <section id="hackscate-event" class="relative">
+                <h1 class="text-4xl font-bold">{s.event_section.title}</h1>
+                <p>{s.event_section.p1}</p>
+                <p>{s.event_section.p2}</p>
+                <p>{s.event_section.p3}</p>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 p-6 border-2 rounded-xl"
+                >
+                    <a
+                        href="https://centrodeextension.uc.cl/en/nuestros_centros/centro-de-extension-campus-oriente/"
+                        class="hover:scale-105 transition-transform flex justify-center"
+                        ><img src="/oriente.webp" alt="" width="350px" />
+                    </a>
+                    <div
+                        class="flex flex-col w-full justify-center items-center"
+                    >
+                        <a
+                            href="https://centrodeextension.uc.cl/en/nuestros_centros/centro-de-extension-campus-oriente/"
+                            class="hover:underline decoration-1"
+                        >
+                            <h2 class="text-2xl font-bold">
+                                {s.event_section.venue_title}
+                            </h2>
+                        </a>
+                        <p class="font-bold">
+                            {s.event_section.venue_location}
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="attendee-profile">
+                <h1 class="text-4xl font-bold">{s.profile_section.title}</h1>
+                <ol class="flex flex-col gap-4 list-none">
+                    <NumberedCard
+                        number={1}
+                        title={s.profile_section.card1_title}
+                        description={s.profile_section.card1_desc}
+                    />
+                    <NumberedCard
+                        number={2}
+                        title={s.profile_section.card2_title}
+                        description={s.profile_section.card2_desc}
+                    />
+                    <NumberedCard
+                        number={3}
+                        title={s.profile_section.card3_title}
+                        description={s.profile_section.card3_desc}
+                    />
+                </ol>
+            </section>
+            <section id="prospective-matrix">
+                <h1 class="text-4xl font-bold">{s.matrix_section.title}</h1>
+                <SponsorshipTable levels={sponsorshipLevels} />
+            </section>
+            <section id="contact">
+                <h1 class="text-4xl font-bold">{s.contact_section.title}</h1>
+                <p>
+                    {s.contact_section.p1_start}
+                    <a href="mailto:coord@osuc.dev" class="text-blue-400"
+                        >coord@osuc.dev</a
+                    >{s.contact_section.p1_end}
+                </p>
+            </section>
+        </main>
+    </div>
+</Layout>

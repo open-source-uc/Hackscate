@@ -1,0 +1,40 @@
+---
+import Layout from "@layouts/Layout.astro";
+import HackscateIcon from "@/components/icons/HackscateIcon.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const h = t("home");
+
+export async function getStaticPaths() {
+    return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
+}
+---
+
+<Layout title={h.layout_title} lang={lang}>
+    <main class="bg-background h-screen flex items-center justify-center p-9">
+        <section
+            class="flex items-center justify-center max-w-7xl w-full"
+            aria-label="Landing page"
+        >
+            <div class="flex flex-col md:flex-row gap-9 items-center">
+                <header class="flex flex-col gap-5">
+                    <h0 class="text-5xl md:text-7xl lg:text-8xl text-primary">
+                        {h.header}
+                    </h0>
+                    <p class="text-3xl md:text-4xl lg:text-5xl text-primary/60">
+                        {h.subheader}
+                    </p>
+                </header>
+
+                <figure
+                    class="flex items-center justify-center pl-6"
+                    aria-label="Hackscate logo"
+                >
+                    <HackscateIcon className="size-37 md:size-[190px]" />
+                </figure>
+            </div>
+        </section>
+    </main>
+</Layout>

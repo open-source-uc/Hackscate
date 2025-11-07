@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "registration": "REGISTRO PRÓXIMAMENTE",
+        "home": "Inicio",
+        "sponsors": "Patrocinadores",
+        "faq": "FAQ"
+    },
+    "home": {
+        "layout_title": "En construcción",
+        "header": "Hackscate",
+        "subheader": "Trabajo en progreso"
+    },
+    "sponsors": {
+        "layout_title": "Patrocinadores",
+        "layout_description": "Explora oportunidades de patrocinio con Hackscate",
+        "sidebar": [
+            {
+                "id": "introduction",
+                "title": "Sobre nosotros"
+            },
+            {
+                "id": "hackscate-event",
+                "title": "El Evento"
+            },
+            {
+                "id": "attendee-profile",
+                "title": "Perfil del Asistente"
+            },
+            {
+                "id": "prospective-matrix",
+                "title": "Matriz de Beneficios"
+            },
+            {
+                "id": "contact",
+                "title": "Contáctanos"
+            }
+        ],
+        "introduction_section": {
+            "title": "Sobre nosotros",
+            "p1": "Open Source UC (OSUC) es la comunidad de innovación tecnológica estudiantil de la Pontificia Universidad Católica de Chile (UC).",
+            "p2": "Desde 2006, hemos impulsado proyectos de innovación de estudiantes para estudiantes.",
+            "p3": "Hoy, queremos expandir nuestro impacto junto a Hackscate."
+        },
+        "event_section": {
+            "title": "El Evento",
+            "p1": "El Evento Hackscate será el lugar para que estudiantes - de todas las carreras y niveles - construyan juntos un producto tecnológico.",
+            "p2": "El evento se centrará en la comunidad estudiantil de la UC-Chile; esperamos 60 innovadores en nuestra sede, el Centro de Extensión, Campus Oriente, UC-Chile.",
+            "p3": "Hackscate se llevará a cabo el viernes 5 de diciembre.",
+            "venue_title": "Centro de Extensión",
+            "venue_location": "Campus Oriente, PUC"
+        },
+        "profile_section": {
+            "title": "Perfil del Asistente",
+            "card1_title": "Ansiosos por aprender y probar nuevos productos",
+            "card1_desc": "Nuestros asistentes son 'early adopters' que buscan activamente herramientas y tecnologías de vanguardia. Como hemos visto con patrocinadores anteriores como GitHub, ~70% de los estudiantes probaron GitHub Copilot.",
+            "card2_title": "Constructores y Solucionadores de Problemas",
+            "card2_desc": "Son desarrolladores prácticos y colaborativos que transforman ideas en prototipos funcionales en 9 horas.",
+            "card3_title": "Próximos a graduarse",
+            "card3_desc": "La mayoría de los asistentes están en sus últimos años de estudio, con sólida formación académica y experiencia en proyectos. ~40% busca activamente prácticas o trabajos a tiempo completo."
+        },
+        "matrix_section": {
+            "title": "Matriz de Beneficios",
+            "table_data": {
+                "title": "Nivel de Patrocinio Único",
+                "price": "$500 USD",
+                "benefits": [
+                    {
+                        "name": "Reconocimiento en Ceremonia de Apertura"
+                    },
+                    {
+                        "name": "Logo en Sitio Web"
+                    },
+                    {
+                        "name": "Promoción en Redes Sociales"
+                    },
+                    {
+                        "name": "Enviar Mentores/Representantes"
+                    },
+                    {
+                        "name": "Acceso a Base de Datos de Asistentes"
+                    },
+                    {
+                        "name": "Activación de Marca en el lugar"
+                    }
+                ]
+            }
+        },
+        "contact_section": {
+            "title": "Contáctanos",
+            "p1_start": "Si tienes preguntas o consultas, no dudes en escribirnos a ",
+            "p1_end": "!"
+        }
+    },
+    "footer": {
+        "made_by": "Hecho con ❤️ por Open Source UC",
+        "change_to": "Change to English"
+    }
+}

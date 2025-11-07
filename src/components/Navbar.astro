@@ -1,6 +1,20 @@
 ---
 import HackscateIcon from "@components/icons/HackscateIcon.astro";
 import MenuIcon from "@components/icons/MenuIcon.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+interface Props {
+    lang: "es" | "en";
+}
+
+export async function getStaticPaths() {
+    return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const nav = t("nav");
 ---
 
 <header class="bg-transparent text-primary fixed w-dvw p-4 z-50" role="banner">
@@ -15,11 +29,11 @@ import MenuIcon from "@components/icons/MenuIcon.astro";
     >
         <nav class="flex items-center z-10" aria-label="Navegación principal">
             <a
-                href="/"
+                href={`/${lang}`}
                 class="flex items-center gap-2"
                 aria-label="Ir al inicio - Hackscate"
             >
-                <HackscateIcon className="size-6 md:size-10" />
+                <HackscateIcon className="size-8 md:size-10" />
             </a>
             <input
                 type="checkbox"
@@ -30,21 +44,21 @@ import MenuIcon from "@components/icons/MenuIcon.astro";
             <ul
                 class="flex flex-col md:flex-row p-6 fixed border-l-2 md:border-l-0 md:static bg-black md:bg-transparent w-2/3 md:w-auto -right-full peer-checked/menu-toggle:right-0 h-full md:h-auto top-0 text-lg gap-8 [&>li]:flex [&>li]:items-center pl-8 [&>li>a]:font-semibold [&>li>a]:text-lg"
             >
-                <li><a href="/" aria-current="page">Inicio</a></li>
-                <li><a href="/sponsors">Sponsors</a></li>
-                <li><a href="/faq">FAQ</a></li>
+                <li><a href={`/${lang}`} aria-current="page">{nav.home}</a></li>
+                <li><a href={`/${lang}/sponsors`}>{nav.sponsors}</a></li>
+                <li><a href={`/${lang}/faq`}>{nav.faq}</a></li>
             </ul>
         </nav>
         <a
             href="#"
             class="text-black bg-white pl-4 pr-3 py-1 esquina-cortada font-semibold hidden md:inline z-10"
             role="button"
-            aria-label="Proximamente inscripciones">REGISTRATION SOON</a
+            aria-label="Proximamente inscripciones">{nav.registration}</a
         >
         <label
             for="menu-toggle"
             class="text-primary md:hidden z-10 cursor-pointer"
-            ><MenuIcon />
+            ><MenuIcon className="size-8" />
         </label>
     </div>
 </header>
