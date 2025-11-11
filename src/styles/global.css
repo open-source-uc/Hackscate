@@ -1,29 +1,8 @@
-@import url("./theme.css");
-@import "tailwindcss";
+/* Import external dependencies */
+@import 'tailwindcss';
 
-@theme {
-    --font-sans: 'Mona Sans', system-ui, sans-serif;
-
-    /* Custom Color Tokens */
-    --color-primary: var(--color-text-primary);
-    --color-background: var(--color-bg-primary);
-    --color-accent: var(--color-accent-blue);
-}
-
-html {
-    font-family: var(--font-sans);
-}
-
-body {
-    min-height: 100vh;
-}
-
-.esquina-cortada {
-    clip-path: polygon(min(15%, 30px) 0%,
-            100% 0%,
-            100% calc(100% - min(25%, 50px)),
-            calc(100% - min(15%, 30px)) 100%,
-            0% 100%,
-            0% min(25%, 50px));
-
-}
+/* Import our CSS components */
+@import './variables.css';
+@import './base.css';
+@import './theme.css';
+@import './utilities.css';
