@@ -4,6 +4,7 @@
 	--radius-md: calc(var(--radius) - 2px);
 	--radius-lg: var(--radius);
 	--radius-xl: calc(var(--radius) + 4px);
+	--radius-2xl: calc(var(--radius) + 64px);
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--color-card: var(--card);
@@ -50,11 +51,11 @@
 	--popover-foreground: oklch(0.9776 0 0);
 	--primary: oklch(0.1776 0.40 260);
 	--primary-foreground: oklch(0.1776 0.15 260);
-	--muted: oklch(0.2776 0 0);
+	--muted: oklch(0.0776 0 0);
 	--muted-foreground: oklch(0.7776 0 0);
 	--accent: oklch(0.1776 0 0);
 	--accent-foreground: oklch(0.9776 0 0);
-	--border: oklch(0.2776 0 0);
+	--border: oklch(0.5776 0 0);
 	--input: oklch(0.6776 0 0);
 	--ring: oklch(0.6776 0 0);
 
