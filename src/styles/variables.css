@@ -38,7 +38,7 @@
 	--breakpoint-tablet: 768px;
 	--breakpoint-desktop: 1154px;
 
-    --font-sans: 'Mona Sans', system-ui, sans-serif;
+    --font-sans: 'Mona Sans Variable', system-ui, sans-serif;
 }
 
 :root {
@@ -52,7 +52,7 @@
 	--primary: oklch(0.1776 0.40 260);
 	--primary-foreground: oklch(0.1776 0.15 260);
 	--muted: oklch(0.0776 0 0);
-	--muted-foreground: oklch(0.7776 0 0);
+	--muted-foreground: oklch(0.8776 0 0);
 	--accent: oklch(0.1776 0 0);
 	--accent-foreground: oklch(0.9776 0 0);
 	--border: oklch(0.5776 0 0);

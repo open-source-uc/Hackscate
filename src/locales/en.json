@@ -6,9 +6,8 @@
         "faq": "FAQ"
     },
     "home": {
-        "layout_title": "WIP",
-        "header": "Hackscate",
-        "subheader": "Work in progress"
+        "join": "JOIN TODAY",
+        "learn_more": "LEARN MORE"
     },
     "sponsors": {
         "layout_title": "Sponsors",

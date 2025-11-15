@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import HackscateIcon from "@/components/icons/HackscateIcon.astro";
+import { Button } from "@/components/ui/button"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -13,27 +13,23 @@ export async function getStaticPaths() {
 ---
 
 <Layout title={h.layout_title} lang={lang}>
-    <main class="bg-background h-screen flex items-center justify-center p-9">
+    <main class="h-screen w-full">
         <section
-            class="flex items-center justify-center max-w-7xl w-full"
-            aria-label="Landing page"
+            class="flex flex-col items-center justify-center py-48"
         >
-            <div class="flex flex-col md:flex-row gap-9 items-center">
-                <header class="flex flex-col gap-5">
-                    <h0 class="text-5xl md:text-7xl lg:text-8xl text-primary">
-                        {h.header}
-                    </h0>
-                    <p class="text-3xl md:text-4xl lg:text-5xl text-primary/60">
-                        {h.subheader}
-                    </p>
-                </header>
-
-                <figure
-                    class="flex items-center justify-center pl-6"
-                    aria-label="Hackscate logo"
-                >
-                    <HackscateIcon className="size-37 md:size-[190px]" />
-                </figure>
+            <h1 class="text-[10rem] font-bold font-width-wide text-foreground py-4">
+                HACKSCATE
+            </h1>
+            <p class="text-lg text-muted-foreground">
+                La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile
+            </p>
+            <div class="flex flex-row items-center pt-12 gap-4">
+                <a href={`/${lang}`} tabindex="-1">
+                    <Button variant="hackscate" size="hackscate_lg">{h.join}</Button>
+                </a>
+                <a href={`/${lang}`} tabindex="-1">
+                    <Button variant="hackscate_outline" size="hackscate_lg">{h.learn_more}</Button>
+                </a>
             </div>
         </section>
     </main>

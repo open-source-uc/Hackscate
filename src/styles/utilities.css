@@ -8,3 +8,16 @@
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
+
+/* Mona Sans Variable Font Width utilities */
+.font-width-narrow {
+	font-stretch: 75%;
+}
+
+.font-width-normal {
+	font-stretch: 100%;
+}
+
+.font-width-wide {
+	font-stretch: 150%;
+}
