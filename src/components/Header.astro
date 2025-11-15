@@ -18,7 +18,9 @@ const t = useTranslations(lang);
 const nav = t("nav");
 ---
 
-<header class="bg-muted mx-8 px-12 py-6 tablet:py-1 z-50 border-1 border-border rounded-tl-2xl rounded-br-2xl" role="banner">
+<header class="bg-muted mx-8 my-8 px-12 py-2 tablet:py-1 z-50 border-1 border-border rounded-tl-2xl rounded-br-2xl" role="banner">
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    
     <div class="flex justify-between overflow-hidden items-center py-2">
 
         <nav class="flex items-center z-10" aria-label="Navegación principal">
@@ -59,8 +61,28 @@ const nav = t("nav");
         
         <label
             for="menu-toggle"
-            class="text-primary md:hidden z-10 cursor-pointer"
+            class="text-foreground md:hidden z-10 cursor-pointer"
             ><MenuIcon className="size-8" />
         </label>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 ease-in-out">
+        <nav class="flex flex-col gap-2 py-4 border-t border-border mt-2" aria-label="Navegación móvil">
+            <a href={`/${lang}`} class="w-full" tabindex="-1">
+                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.location}</Button>
+            </a>
+            <a href={`/${lang}/sponsors`} class="w-full" tabindex="-1">
+                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.sponsors}</Button>
+            </a>
+            <a href={`/${lang}/faq`} class="w-full" tabindex="-1">
+                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.faq}</Button>
+            </a>
+            <a href="#" class="w-full mt-2" aria-label="Únete Hoy" tabindex="-1">
+                <Button variant="hackscate" size="hackscate" className="w-full">
+                    {nav.registration}
+                </Button>
+            </a>
+        </nav>
     </div>
 </header>

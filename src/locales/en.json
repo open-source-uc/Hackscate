@@ -6,8 +6,15 @@
         "faq": "FAQ"
     },
     "home": {
+        "subtitle": "The tech-innovation hackathon of Pontificia Universidad Católica de Chile",
         "join": "JOIN TODAY",
         "learn_more": "LEARN MORE"
+    },
+    "explainer": {
+        "title": "What is Hackscate?",
+        "p1": "Hackscate is a 9-hour hackathon organized by Open Source UC, the student tech-innovation community of Pontificia Universidad Católica de Chile (UC).",
+        "p2": "The event will bring together students from all majors and levels to build innovative tech products in a collaborative and dynamic environment.",
+        "p3": "Hackscate will take place on Friday, December 5th at the Centro de Extensión, Campus Oriente, UC-Chile."
     },
     "sponsors": {
         "layout_title": "Sponsors",

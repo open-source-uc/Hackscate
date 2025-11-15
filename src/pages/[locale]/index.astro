@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/landing/Hero.astro";
+import Explainer from "@components/landing/Explainer.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -13,9 +14,9 @@ export async function getStaticPaths() {
 ---
 
 <Layout title={h.layout_title} lang={lang}>
-    <main class="h-screen w-full">
+    <main class="h-full w-full">
         <Hero lang={lang} t={t} />
 
-        
+        <Explainer lang={lang} t={t} />
     </main>
 </Layout>
