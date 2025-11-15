@@ -1,0 +1,66 @@
+---
+import HackscateIcon from "@components/icons/HackscateIcon.astro";
+import MenuIcon from "@components/icons/MenuIcon.astro";
+import { Button } from "@/components/ui/button"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+interface Props {
+    lang: "es" | "en";
+}
+
+export async function getStaticPaths() {
+    return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const nav = t("nav");
+---
+
+<header class="bg-muted px-12 py-6 tablet:py-1 z-50 border-1 border-border rounded-tl-2xl rounded-br-2xl" role="banner">
+    <div class="flex justify-between overflow-hidden items-center py-2">
+
+        <nav class="flex items-center z-10" aria-label="Navegación principal">
+            <a
+                href={`/${lang}`}
+                class="flex items-center gap-2"
+                aria-label="Ir al inicio - Hackscate"
+            >
+                <HackscateIcon className="size-8 tablet:size-10" />
+            </a>
+
+            <div
+                class="hidden md:flex ml-8 gap-2">
+                <a href={`/${lang}`} tabindex="-1">
+                    <Button variant="ghost" size="lg">{nav.location}</Button>
+                </a>
+                <a href={`/${lang}/sponsors`} tabindex="-1">
+                    <Button variant="ghost" size="lg">{nav.sponsors}</Button>
+                </a>
+                <a href={`/${lang}/faq`} tabindex="-1">
+                    <Button variant="ghost" size="lg">{nav.faq}</Button>
+                </a>
+            </div>
+
+            
+        </nav>
+
+        <a
+                href="#"
+                aria-label="Únete Hoy"
+                class="hidden tablet:inline"
+                tabindex="-1"
+            >
+            <Button variant="hackscate" size="hackscate">
+                {nav.registration}
+            </Button>
+        </a>
+        
+        <label
+            for="menu-toggle"
+            class="text-primary md:hidden z-10 cursor-pointer"
+            ><MenuIcon className="size-8" />
+        </label>
+    </div>
+</header>

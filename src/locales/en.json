@@ -1,8 +1,8 @@
 {
     "nav": {
         "registration": "JOIN TODAY",
-        "home": "Home",
-        "sponsors": "Sponsors",
+        "location": "LOCATION",
+        "sponsors": "SPONSORS",
         "faq": "FAQ"
     },
     "home": {
