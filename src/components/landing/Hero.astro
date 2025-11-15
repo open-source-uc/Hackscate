@@ -1,0 +1,28 @@
+---
+import { Button } from "@/components/ui/button";
+
+interface Props {
+    lang: string;
+    t: ReturnType<typeof import("@/i18n/utils").useTranslations>;
+}
+
+const { lang, t } = Astro.props;
+const h = t("home");
+---
+
+<section class="flex flex-col items-center justify-center py-48">
+    <h1 class="text-[10rem] font-bold font-width-wide text-foreground py-4">
+        HACKSCATE
+    </h1>
+    <p class="text-lg text-muted-foreground">
+        La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile
+    </p>
+    <div class="flex flex-row items-center pt-12 gap-4">
+        <a href={`/${lang}`} tabindex="-1">
+            <Button variant="hackscate" size="hackscate_lg">{h.join}</Button>
+        </a>
+        <a href={`/${lang}`} tabindex="-1">
+            <Button variant="hackscate_outline" size="hackscate_lg">{h.learn_more}</Button>
+        </a>
+    </div>
+</section>

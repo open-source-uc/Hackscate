@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { Button } from "@/components/ui/button"
+import Hero from "@components/landing/Hero.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -14,23 +14,8 @@ export async function getStaticPaths() {
 
 <Layout title={h.layout_title} lang={lang}>
     <main class="h-screen w-full">
-        <section
-            class="flex flex-col items-center justify-center py-48"
-        >
-            <h1 class="text-[10rem] font-bold font-width-wide text-foreground py-4">
-                HACKSCATE
-            </h1>
-            <p class="text-lg text-muted-foreground">
-                La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile
-            </p>
-            <div class="flex flex-row items-center pt-12 gap-4">
-                <a href={`/${lang}`} tabindex="-1">
-                    <Button variant="hackscate" size="hackscate_lg">{h.join}</Button>
-                </a>
-                <a href={`/${lang}`} tabindex="-1">
-                    <Button variant="hackscate_outline" size="hackscate_lg">{h.learn_more}</Button>
-                </a>
-            </div>
-        </section>
+        <Hero lang={lang} t={t} />
+
+        
     </main>
 </Layout>
