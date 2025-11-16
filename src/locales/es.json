@@ -16,6 +16,10 @@
         "p2": "No importa tu carrera o nivel de experiencia; Hackscate está pensada para ser un espacio de aprendizaje y colaboración",
         "p3": "Te esperamos en las instalaciones del"
     },
+    "sponsors_explainer" : {
+        "title1": "Apoya",
+        "title2": "Auspicia"
+    },
     "sponsors": {
         "layout_title": "Patrocinadores",
         "layout_description": "Explora oportunidades de patrocinio con Hackscate",

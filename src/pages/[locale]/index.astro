@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Hero from "@components/landing/Hero.astro";
 import Explainer from "@components/landing/Explainer.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Sponsors from "@/components/landing/Sponsors.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -18,5 +19,7 @@ export async function getStaticPaths() {
         <Hero lang={lang} t={t} />
 
         <Explainer lang={lang} t={t} />
+
+        <Sponsors lang={lang} t={t} />
     </main>
 </Layout>
