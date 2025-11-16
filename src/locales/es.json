@@ -142,10 +142,10 @@
         ]
     },
     "schedule": {
-        "layout_title": "Horario",
-        "layout_description": "Descubre el emocionante horario de eventos planeados para Hackscate",
+        "layout_title": "Itinerario",
+        "layout_description": "Descubre el itinerario de actividades de Hackscate",
         "sidebar": {
-            "title": "Horario del Evento"
+            "title": "Itinerario del Evento"
         }
     }
 }

@@ -6,6 +6,6 @@ interface Props {
 const { className = "" } = Astro.props as Props;
 ---
 
-<span class={`bg-white text-black py-1 px-4 rounded-tl-2xl rounded-br-2xl ${className}`}>
+<span class={`bg-card-foreground text-card py-1.5 px-5 rounded-tl-2xl rounded-br-2xl ${className}`}>
     <slot />
 </span>
