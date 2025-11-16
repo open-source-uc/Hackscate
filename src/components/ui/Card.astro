@@ -1,0 +1,56 @@
+---
+interface Props {
+    icon?: any;
+    text: string;
+    image?: string;
+    imageAlt?: string;
+    class?: string;
+}
+
+const { 
+    icon: Icon, 
+    text, 
+    image, 
+    imageAlt = "", 
+    class: className = "",
+    ...rest 
+} = Astro.props;
+---
+
+<div
+    class:list={[
+        "relative rounded-tl-2xl rounded-br-2xl bg-card border border-border overflow-hidden flex flex-col",
+        className
+    ]}
+    {...rest}
+>
+    <!-- Icon at top-left -->
+    {Icon && (
+        <div class="absolute top-8 right-8 z-10">
+            <Icon class="w-8 h-8 tablet:w-10 tablet:h-10" />
+        </div>
+    )}
+
+    <!-- Optional Image -->
+    {image && (
+        <div class="flex-1 min-h-[200px]">
+            <img
+                src={image}
+                alt={imageAlt}
+                class="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    )}
+
+    <!-- Text at bottom -->
+    <div class:list={[
+        "p-6 mt-16",
+        Icon && !image && "pt-16"
+    ]}>
+        <p class="text-foreground leading-relaxed">
+            {text}
+        </p>
+    </div>
+</div>

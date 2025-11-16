@@ -12,8 +12,11 @@ const { list_items, lang } = Astro.props as Props;
 ---
 
 <aside class="sidebar-container flex flex-col gap-6">
-    <h2 class="text-3xl">
-        <a href={`/${lang}`}><HackscateIcon className="size-16" /> Hackscate</a>
+    <h2 class="text-3xl font-bold">
+        <a href={`/${lang}`} class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <HackscateIcon className="size-16" />
+            <span class="text-foreground">Hackscate</span>
+        </a>
     </h2>
     <nav class="sticky top-0 flex flex-col gap-2" data-sidebar-nav>
         {
@@ -21,7 +24,7 @@ const { list_items, lang } = Astro.props as Props;
                 <a
                     href={`#${item.id}`}
                     data-section-id={item.id}
-                    class="sidebar-link p-2 transition-all duration-200"
+                    class="sidebar-link p-3 rounded-tl-xl rounded-br-xl transition-all duration-200 hover:bg-muted text-muted-foreground hover:text-foreground"
                 >
                     {item.title}
                 </a>
@@ -67,9 +70,12 @@ const { list_items, lang } = Astro.props as Props;
                     // Remover clases active de todos los links
                     links.forEach((link) => {
                         link.classList.remove(
-                            "bg-accent",
+                            "bg-foreground",
                             "text-background",
                             "font-semibold",
+                        );
+                        link.classList.add(
+                            "text-muted-foreground",
                         );
                     });
 
@@ -78,8 +84,11 @@ const { list_items, lang } = Astro.props as Props;
                         `[data-section-id="${id}"]`,
                     );
                     if (activeLink) {
+                        activeLink.classList.remove(
+                            "text-muted-foreground",
+                        );
                         activeLink.classList.add(
-                            "bg-accent",
+                            "bg-foreground",
                             "text-background",
                             "font-semibold",
                         );

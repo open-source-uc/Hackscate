@@ -1,5 +1,7 @@
 ---
 import { Button } from "@/components/ui/button";
+import BrandedImage from "@/components/ui/BrandedImage.astro";
+import OsucIcon from "@/components/icons/OsucIcon.astro";
 
 interface Props {
     lang: string;
@@ -10,19 +12,20 @@ const { lang, t } = Astro.props;
 const e = t("explainer");
 ---
 
-<section class="flex flex-col items-center justify-center py-48">
-    <h1 class="text-[10rem] font-bold font-width-wide text-foreground py-4">
-        HACKSCATE
-    </h1>
-    <p class="text-lg text-muted-foreground">
+<section class="flex flex-col items-center justify-center pt-28 px-12">
+    <h2 class="text-2xl font-width-wide tablet:text-3xl desktop:text-4xl font-semibold text-center pb-8">
+        {e.title}
+    </h2>
+
+    <p class="text-center text-muted-foreground leading-relaxed max-w-3xl pb-8">
         {e.p1}
     </p>
-    <div class="flex flex-row items-center pt-12 gap-4">
-        <a href={`/${lang}`} tabindex="-1">
-            <Button variant="hackscate" size="hackscate_lg">{e.join}</Button>
-        </a>
-        <a href={`/${lang}`} tabindex="-1">
-            <Button variant="hackscate_outline" size="hackscate_lg">{e.learn_more}</Button>
-        </a>
-    </div>
+
+    <BrandedImage
+        src="/oriente2.webp"
+        alt="Hackscate 2025 event photo"
+        width={400}
+        height={450}
+        class="mb-12 shadow-lg"
+    />
 </section>

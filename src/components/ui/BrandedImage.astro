@@ -1,0 +1,36 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    width?: string | number;
+    height?: string | number;
+    class?: string;
+    loading?: "lazy" | "eager";
+    decoding?: "async" | "sync" | "auto";
+}
+
+const { 
+    src, 
+    alt, 
+    width, 
+    height, 
+    class: className = "", 
+    loading = "lazy",
+    decoding = "async",
+    ...rest 
+} = Astro.props;
+---
+
+<img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={loading}
+    decoding={decoding}
+    class:list={[
+        "rounded-tl-2xl rounded-br-2xl object-cover",
+        className
+    ]}
+    {...rest}
+/>

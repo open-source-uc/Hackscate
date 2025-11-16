@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Sidebar from "@/components/sponsors/Sidebar.astro";
 import NumberedCard from "@/components/sponsors/NumberedCard.astro";
 import SponsorshipTable from "@/components/sponsors/SponsorshipTable.astro";
+import { Button } from "@/components/ui/button";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -20,43 +21,43 @@ export async function getStaticPaths() {
 <Layout
     title={s.layout_title}
     lang={lang}
-    activeNavBar={false}
+    activeNavBar={true}
     description={s.layout_description}
 >
     <div
-        class="flex min-h-screen px-5 md:px-5 xl:px-40 text-primary bg-background justify-center"
+        class="flex min-h-screen px-5 md:px-5 xl:px-40 text-foreground bg-background justify-center"
     >
         <div
-            class="hidden lg:inline p-6 border-r sticky top-0 h-screen overflow-y-auto min-w-60"
+            class="hidden lg:inline p-6 border-r border-border sticky top-0 h-screen overflow-y-auto min-w-60"
         >
             <Sidebar list_items={sections} lang={lang} />
         </div>
         <main
-            class="flex flex-col gap-10 md:px-20 lg:px-0 lg:pl-10 lg:max-w-2xl xl:max-w-4xl [&>section]:flex [&>section]:flex-col [&>section]:gap-4 [&>section]:p-6"
+            class="flex flex-col gap-10 md:px-20 lg:px-0 lg:pl-10 lg:max-w-2xl xl:max-w-4xl [&>section]:flex [&>section]:flex-col [&>section]:gap-6 [&>section]:p-6"
         >
             <section id="introduction">
-                <h1 class="text-4xl font-bold">
+                <h1 class="text-4xl tablet:text-5xl font-bold">
                     {s.introduction_section.title}
                 </h1>
-                <p>{s.introduction_section.p1}</p>
-                <p>{s.introduction_section.p2}</p>
-                <p>{s.introduction_section.p3}</p>
+                <p class="text-muted-foreground leading-relaxed">{s.introduction_section.p1}</p>
+                <p class="text-muted-foreground leading-relaxed">{s.introduction_section.p2}</p>
+                <p class="text-muted-foreground leading-relaxed">{s.introduction_section.p3}</p>
             </section>
             <section id="hackscate-event" class="relative">
-                <h1 class="text-4xl font-bold">{s.event_section.title}</h1>
-                <p>{s.event_section.p1}</p>
-                <p>{s.event_section.p2}</p>
-                <p>{s.event_section.p3}</p>
+                <h1 class="text-4xl tablet:text-5xl font-bold">{s.event_section.title}</h1>
+                <p class="text-muted-foreground leading-relaxed">{s.event_section.p1}</p>
+                <p class="text-muted-foreground leading-relaxed">{s.event_section.p2}</p>
+                <p class="text-muted-foreground leading-relaxed">{s.event_section.p3}</p>
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 p-6 border-2 rounded-xl"
+                    class="grid grid-cols-1 md:grid-cols-2 p-6 border-1 border-border bg-muted rounded-tl-2xl rounded-br-2xl"
                 >
                     <a
                         href="https://centrodeextension.uc.cl/en/nuestros_centros/centro-de-extension-campus-oriente/"
                         class="hover:scale-105 transition-transform flex justify-center"
-                        ><img src="/oriente.webp" alt="" width="350px" />
+                        ><img src="/oriente.webp" alt="Centro de Extensión Campus Oriente" width="350px" />
                     </a>
                     <div
-                        class="flex flex-col w-full justify-center items-center"
+                        class="flex flex-col w-full justify-center items-center gap-2 mt-4 md:mt-0"
                     >
                         <a
                             href="https://centrodeextension.uc.cl/en/nuestros_centros/centro-de-extension-campus-oriente/"
@@ -66,14 +67,14 @@ export async function getStaticPaths() {
                                 {s.event_section.venue_title}
                             </h2>
                         </a>
-                        <p class="font-bold">
+                        <p class="font-semibold text-muted-foreground">
                             {s.event_section.venue_location}
                         </p>
                     </div>
                 </div>
             </section>
             <section id="attendee-profile">
-                <h1 class="text-4xl font-bold">{s.profile_section.title}</h1>
+                <h1 class="text-4xl tablet:text-5xl font-bold">{s.profile_section.title}</h1>
                 <ol class="flex flex-col gap-4 list-none">
                     <NumberedCard
                         number={1}
@@ -93,17 +94,25 @@ export async function getStaticPaths() {
                 </ol>
             </section>
             <section id="prospective-matrix">
-                <h1 class="text-4xl font-bold">{s.matrix_section.title}</h1>
+                <h1 class="text-4xl tablet:text-5xl font-bold">{s.matrix_section.title}</h1>
                 <SponsorshipTable levels={sponsorshipLevels} />
             </section>
             <section id="contact">
-                <h1 class="text-4xl font-bold">{s.contact_section.title}</h1>
-                <p>
+                <h1 class="text-4xl tablet:text-5xl font-bold">{s.contact_section.title}</h1>
+                <p class="text-muted-foreground leading-relaxed">
                     {s.contact_section.p1_start}
-                    <a href="mailto:coord@osuc.dev" class="text-blue-400"
+                    <a href="mailto:coord@osuc.dev" class="text-accent hover:underline font-semibold"
                         >coord@osuc.dev</a
                     >{s.contact_section.p1_end}
                 </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="mailto:coord@osuc.dev" tabindex="-1">
+                        <Button variant="hackscate" size="hackscate_lg">Contact Us</Button>
+                    </a>
+                    <a href={`/${lang}`} tabindex="-1">
+                        <Button variant="hackscate_outline" size="hackscate_lg">Learn More</Button>
+                    </a>
+                </div>
             </section>
         </main>
     </div>
