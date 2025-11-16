@@ -3,7 +3,8 @@
         "registration": "JOIN TODAY",
         "location": "LOCATION",
         "sponsors": "SPONSORS",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "schedule": "SCHEDULE"
     },
     "home": {
         "subtitle": "The tech-innovation hackathon of Pontificia Universidad Católica de Chile",
@@ -17,7 +18,7 @@
         "p3": "Hackscate will take place on Friday, December 5th at the Centro de Extensión, Campus Oriente, UC-Chile.",
         "caption": "Centro de Extensión, Campus Oriente, Pontificia Universidad Católica de Chile"
     },
-    "sponsors_explainer" : {
+    "sponsors_explainer": {
         "title1": "Support",
         "title2": "Sponsor"
     },
@@ -140,5 +141,12 @@
                 "answer": "No, participation in Hackscate is completely free for all attendees."
             }
         ]
+    },
+    "schedule": {
+        "layout_title": "Schedule",
+        "layout_description": "Discover the exciting schedule of events planned for Hackscate",
+        "sidebar": {
+            "title": "Event Schedule"
+        }
     }
 }

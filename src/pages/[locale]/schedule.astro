@@ -1,0 +1,69 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Badge from "@/components/ui/Badge.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getSchedule } from "@/data/schedule/index.ts";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const h = t("schedule");
+const schedule = await getSchedule(lang);
+
+export async function getStaticPaths() {
+    return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
+}
+---
+
+<Layout lang={lang}>
+    <main class="min-h-screen flex flex-col items-center gap-10 px-12 pt-36 pb-20">
+        <h1 class="text-[3.2rem] tablet:text-[6rem] desktop:text-[8rem] font-bold font-width-wide text-foreground text-center">
+            {h.layout_title}
+        </h1>
+        
+        <div class="w-full max-w-4xl flex flex-col gap-4">
+            {
+                schedule["schedule"].map((item, index) => {
+                    const {start_time, end_time, title, description, type, location} = item;
+                    return (
+                        <article class="grid grid-cols-1 tablet:grid-cols-[auto_1fr] bg-card border border-border rounded-lg overflow-hidden ">
+                            <div class="flex flex-col items-center justify-center bg-muted/50 p-6 tablet:min-w-[180px]">
+                                <time class="text-2xl tablet:text-3xl font-bold font-mono text-foreground">
+                                    {start_time}
+                                </time>
+                                <span class="text-sm text-muted-foreground">-</span>
+                                <time class="text-lg tablet:text-xl font-mono text-muted-foreground">
+                                    {end_time}
+                                </time>
+                            </div>
+                            
+                            <div class="p-6 flex flex-col gap-3 relative">
+                                {type && (
+                                    <Badge className="absolute right-4 top-4 text-sm">
+                                        {type}
+                                    </Badge>
+                                )}
+                                
+                                <h2 class="text-xl tablet:text-2xl font-semibold text-foreground pr-24">
+                                    {title}
+                                </h2>
+                                
+                                <p class="text-muted-foreground leading-relaxed">
+                                    {description}
+                                </p>
+                                
+                                {location && (
+                                    <div class="flex items-center gap-2 text-sm text-muted-foreground mt-2">
+                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                        <span>{location}</span>
+                                    </div>
+                                )}
+                            </div>
+                        </article>
+                    )
+                })
+            }
+        </div>
+    </main>
+</Layout>

@@ -3,7 +3,8 @@
         "registration": "REGISTRO PRÓXIMAMENTE",
         "location": "UBICACIÓN",
         "sponsors": "SPONSORS",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "schedule": "HORARIO"
     },
     "home": {
         "subtitle": "La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile",
@@ -16,7 +17,7 @@
         "p2": "No importa tu carrera o nivel de experiencia; Hackscate está pensada para ser un espacio de aprendizaje y colaboración",
         "p3": "Te esperamos en las instalaciones del"
     },
-    "sponsors_explainer" : {
+    "sponsors_explainer": {
         "title1": "Apoya",
         "title2": "Auspicia"
     },
@@ -139,5 +140,12 @@
                 "answer": "No, la participación en Hackscate es completamente gratuita para todos los asistentes."
             }
         ]
+    },
+    "schedule": {
+        "layout_title": "Horario",
+        "layout_description": "Descubre el emocionante horario de eventos planeados para Hackscate",
+        "sidebar": {
+            "title": "Horario del Evento"
+        }
     }
 }

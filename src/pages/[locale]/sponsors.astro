@@ -39,22 +39,40 @@ export async function getStaticPaths() {
                 <h1 class="text-4xl tablet:text-5xl font-bold">
                     {s.introduction_section.title}
                 </h1>
-                <p class="text-muted-foreground leading-relaxed">{s.introduction_section.p1}</p>
-                <p class="text-muted-foreground leading-relaxed">{s.introduction_section.p2}</p>
-                <p class="text-muted-foreground leading-relaxed">{s.introduction_section.p3}</p>
+                <p class="text-muted-foreground leading-relaxed">
+                    {s.introduction_section.p1}
+                </p>
+                <p class="text-muted-foreground leading-relaxed">
+                    {s.introduction_section.p2}
+                </p>
+                <p class="text-muted-foreground leading-relaxed">
+                    {s.introduction_section.p3}
+                </p>
             </section>
             <section id="hackscate-event" class="relative">
-                <h1 class="text-4xl tablet:text-5xl font-bold">{s.event_section.title}</h1>
-                <p class="text-muted-foreground leading-relaxed">{s.event_section.p1}</p>
-                <p class="text-muted-foreground leading-relaxed">{s.event_section.p2}</p>
-                <p class="text-muted-foreground leading-relaxed">{s.event_section.p3}</p>
+                <h1 class="text-4xl tablet:text-5xl font-bold">
+                    {s.event_section.title}
+                </h1>
+                <p class="text-muted-foreground leading-relaxed">
+                    {s.event_section.p1}
+                </p>
+                <p class="text-muted-foreground leading-relaxed">
+                    {s.event_section.p2}
+                </p>
+                <p class="text-muted-foreground leading-relaxed">
+                    {s.event_section.p3}
+                </p>
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 p-6 border-1 border-border bg-muted rounded-tl-2xl rounded-br-2xl"
                 >
                     <a
                         href="https://centrodeextension.uc.cl/en/nuestros_centros/centro-de-extension-campus-oriente/"
                         class="hover:scale-105 transition-transform flex justify-center"
-                        ><img src="/oriente.webp" alt="Centro de Extensión Campus Oriente" width="350px" />
+                        ><img
+                            src="/oriente.webp"
+                            alt="Centro de Extensión Campus Oriente"
+                            width="350px"
+                        />
                     </a>
                     <div
                         class="flex flex-col w-full justify-center items-center gap-2 mt-4 md:mt-0"
@@ -74,7 +92,9 @@ export async function getStaticPaths() {
                 </div>
             </section>
             <section id="attendee-profile">
-                <h1 class="text-4xl tablet:text-5xl font-bold">{s.profile_section.title}</h1>
+                <h1 class="text-4xl tablet:text-5xl font-bold">
+                    {s.profile_section.title}
+                </h1>
                 <ol class="flex flex-col gap-4 list-none">
                     <NumberedCard
                         number={1}
@@ -94,23 +114,32 @@ export async function getStaticPaths() {
                 </ol>
             </section>
             <section id="prospective-matrix">
-                <h1 class="text-4xl tablet:text-5xl font-bold">{s.matrix_section.title}</h1>
+                <h1 class="text-4xl tablet:text-5xl font-bold">
+                    {s.matrix_section.title}
+                </h1>
                 <SponsorshipTable levels={sponsorshipLevels} />
             </section>
             <section id="contact">
-                <h1 class="text-4xl tablet:text-5xl font-bold">{s.contact_section.title}</h1>
+                <h1 class="text-4xl tablet:text-5xl font-bold">
+                    {s.contact_section.title}
+                </h1>
                 <p class="text-muted-foreground leading-relaxed">
                     {s.contact_section.p1_start}
-                    <a href="mailto:coord@osuc.dev" class="text-accent hover:underline font-semibold"
-                        >coord@osuc.dev</a
+                    <a
+                        href="mailto:coord@osuc.dev"
+                        class="hover:underline font-semibold">coord@osuc.dev</a
                     >{s.contact_section.p1_end}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
                     <a href="mailto:coord@osuc.dev" tabindex="-1">
-                        <Button variant="hackscate" size="hackscate_lg">Contact Us</Button>
+                        <Button variant="hackscate" size="hackscate_lg"
+                            >Contact Us</Button
+                        >
                     </a>
                     <a href={`/${lang}`} tabindex="-1">
-                        <Button variant="hackscate_outline" size="hackscate_lg">Learn More</Button>
+                        <Button variant="hackscate_outline" size="hackscate_lg"
+                            >Learn More</Button
+                        >
                     </a>
                 </div>
             </section>
