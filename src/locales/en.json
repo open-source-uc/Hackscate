@@ -110,5 +110,35 @@
     "footer": {
         "made_by": "Made with ❤️ by Open Source UC",
         "change_to": "Cambiar a Español"
+    },
+    "faq": {
+        "layout_title": "Frequently Asked Questions",
+        "title": "Frequently Asked Questions",
+        "questions": [
+            {
+                "question": "What is Hackscate?",
+                "answer": "Hackscate is a 9-hour hackathon organized by Open Source UC, bringing together students from all majors to build innovative tech products in a collaborative environment."
+            },
+            {
+                "question": "When and where is the event?",
+                "answer": "Hackscate will take place on Friday, December 5th at Centro de Extensión, Campus Oriente, Pontificia Universidad Católica de Chile."
+            },
+            {
+                "question": "Who can participate?",
+                "answer": "The event is open to all students from Pontificia Universidad Católica de Chile, regardless of their major or level of experience."
+            },
+            {
+                "question": "Do I need prior programming experience?",
+                "answer": "No! Hackscate is designed to be accessible to everyone. Whether you're a beginner or experienced developer, you'll find your place in a team."
+            },
+            {
+                "question": "How do I register?",
+                "answer": "Registration will open soon! Keep an eye on our website and social media for announcements."
+            },
+            {
+                "question": "Is there a participation fee?",
+                "answer": "No, participation in Hackscate is completely free for all attendees."
+            }
+        ]
     }
 }

@@ -1,17 +1,45 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { getLangFromUrl } from "@/i18n/utils";
-import { getRelativeLocaleUrl } from "astro:i18n";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import FAQAccordion from "@/components/landing/FAQAccordion";
+import BrandedImage from "@/components/ui/BrandedImage.astro";
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const faq = t("faq");
 
 export async function getStaticPaths() {
     return [{ params: { locale: "en" } }, { params: { locale: "es" } }];
 }
 ---
 
-<Layout title="FAQ" lang={lang}>
-    <main class="bg-background flex justify-center h-screen items-center">
-        <h1 class="text-4xl text-primary">FAQ</h1>
+<Layout title={faq.layout_title} lang={lang}>
+    <main class="min-h-screen py-20 desktop:py-36 px-6 tablet:px-12 desktop:px-20">
+        <div class="max-w-7xl mx-auto flex flex-col desktop:flex-row gap-12 desktop:gap-16">
+            <!-- Left side - Image (1/5 of space) -->
+            <div class="w-full desktop:w-1/5 flex-shrink-0">
+                <BrandedImage 
+                    src="/oriente2.webp" 
+                    alt="Campus Oriente" 
+                    class="w-full h-[16rem] desktop:h-full object-cover desktop:hidden"
+                />
+                <BrandedImage 
+                    src="/oriente3.webp" 
+                    alt="Campus Oriente" 
+                    class="hidden desktop:block w-full h-full object-cover"
+                />
+            </div>
+
+            <!-- Right side - FAQ Questions (4/5 of space) -->
+            <div class="flex-1 flex flex-col gap-8">
+                <h1 class="text-3xl tablet:text-4xl desktop:text-5xl font-bold font-width-wide text-foreground">
+                    {faq.title}
+                </h1>
+
+                <div class="flex flex-col gap-4">
+                    <FAQAccordion questions={faq.questions} client:load />
+                </div>
+            </div>
+        </div>
     </main>
 </Layout>
