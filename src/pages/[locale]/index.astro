@@ -4,6 +4,7 @@ import Hero from "@components/landing/Hero.astro";
 import Explainer from "@components/landing/Explainer.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import Sponsors from "@/components/landing/Sponsors.astro";
+import Questions from "@/components/landing/Questions.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -21,5 +22,7 @@ export async function getStaticPaths() {
         <Explainer lang={lang} t={t} />
 
         <Sponsors lang={lang} t={t} />
+
+        <Questions lang={lang} t={t} />
     </main>
 </Layout>

@@ -21,6 +21,11 @@
         "title1": "Support",
         "title2": "Sponsor"
     },
+    "questions": {
+        "title": "Have Questions?",
+        "p1": "Check out our Frequently Asked Questions section or reach out to us directly at hack [at] osuc.dev",
+        "button": "View Frequently Asked Questions"
+    },
     "sponsors": {
         "layout_title": "Sponsors",
         "layout_description": "Explore sponsorship opportunities with Hackscate",

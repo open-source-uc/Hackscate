@@ -20,6 +20,11 @@
         "title1": "Apoya",
         "title2": "Auspicia"
     },
+    "questions": {
+        "title": "¿Tienes Preguntas?",
+        "p1": "Revisa nuestra sección de Preguntas Frecuentes o contáctanos directamente a hack [at] osuc.dev",
+        "button": "Ver Preguntas Frecuentes"
+    },
     "sponsors": {
         "layout_title": "Patrocinadores",
         "layout_description": "Explora oportunidades de patrocinio con Hackscate",

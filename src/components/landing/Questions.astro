@@ -1,0 +1,29 @@
+---
+import { Button } from "@/components/ui/Button";
+
+interface Props {
+    lang: string;
+    t: ReturnType<typeof import("@/i18n/utils").useTranslations>;
+}
+
+const { lang, t } = Astro.props;
+const q = t("questions");
+---
+
+<section class="flex flex-col items-center justify-center py-28 px-12 gap-8">
+
+    <h2 class="text-xl font-width-wide tablet:text-2xl desktop:text-3xl font-semibold text-center">
+        {q.title}
+    </h2>
+
+    <p class="text-md tablet:text-lg desktop:text-xl text-center">
+        {q.p1}
+    </p>
+
+    <Button variant="hackscate" size="hackscate">
+        <a href={`/${lang}/faq`} class="w-full h-full flex items-center justify-center">
+            {q.button}
+        </a>
+    </Button>
+
+</section>
