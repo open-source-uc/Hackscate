@@ -105,5 +105,12 @@
     "footer": {
         "made_by": "Made with ❤️ by Open Source UC",
         "change_to": "Cambiar a Español"
+    },
+    "schedule": {
+        "layout_title": "Schedule",
+        "layout_description": "Discover the exciting schedule of events planned for Hackscate",
+        "sidebar": {
+            "title": "Event Schedule"
+        }
     }
 }

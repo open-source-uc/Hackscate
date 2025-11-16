@@ -1,0 +1,76 @@
+{
+    "schedule": [
+        {
+            "id": "registration",
+            "start_time": "08:40",
+            "end_time": "09:00",
+            "title": "Registro y Check-in",
+            "description": "Recepción de participantes y entrega de material",
+            "type": "Registración",
+            "location": "Entrada Centro de Extensión"
+        },
+        {
+            "id": "opening",
+            "start_time": "09:00",
+            "end_time": "09:20",
+            "title": "Ceremonia de Apertura",
+            "description": "Bienvenida oficial y presentación del evento",
+            "type": "Ceremonia",
+            "location": "Auditorio Principal"
+        },
+        {
+            "id": "hacking-start",
+            "start_time": "09:20",
+            "end_time": "17:00",
+            "title": "¡Comienza el Hackathon!",
+            "description": "Los equipos comienzan a desarrollar sus proyectos",
+            "type": "Hacking",
+            "location": "Auditorio Principal"
+        },
+        {
+            "id": "lunch",
+            "start_time": "14:00",
+            "end_time": "15:00",
+            "title": "Almuerzo",
+            "description": "Pausa para almorzar",
+            "type": "Descanso",
+            "location": "Fuera del Auditorio"
+        },
+        {
+            "id": "send_limit",
+            "start_time": "17:00",
+            "end_time": "17:00",
+            "title": "Límite de Envío de Proyectos",
+            "description": "Hora límite para enviar los proyectos desarrollados",
+            "type": "Límite",
+            "location": "Plataforma de Envío"
+        },
+        {
+            "id": "judgeing",
+            "start_time": "17:00",
+            "end_time": "17:30",
+            "title": "Los jurados evaluan los proyectos",
+            "description": "Los equipos presentan sus proyectos",
+            "type": "Evaluación",
+            "location": "Auditorio Principal"
+        },
+        {
+            "id": "awards",
+            "start_time": "17:30",
+            "end_time": "17:50",
+            "title": "Ceremonia de Premiación",
+            "description": "Anuncio de ganadores y entrega de premios",
+            "type": "Ceremonia",
+            "location": "Auditorio Principal"
+        },
+        {
+            "id": "closing",
+            "start_time": "17:50",
+            "end_time": "18:00",
+            "title": "Palabras de Clausura",
+            "description": "Cierre oficial del evento y agradecimientos",
+            "type": "Ceremonia",
+            "location": "Auditorio Principal"
+        }
+    ]
+}

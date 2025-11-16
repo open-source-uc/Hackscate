@@ -104,5 +104,12 @@
     "footer": {
         "made_by": "Hecho con ❤️ por Open Source UC",
         "change_to": "Change to English"
+    },
+    "schedule": {
+        "layout_title": "Horario",
+        "layout_description": "Descubre el emocionante horario de eventos planeados para Hackscate",
+        "sidebar": {
+            "title": "Horario del Evento"
+        }
     }
 }
