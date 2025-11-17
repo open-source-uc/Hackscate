@@ -1,5 +1,6 @@
 ---
 import { Button } from "@/components/ui/button";
+import Countdown from "@/components/landing/Countdown";
 
 interface Props {
     lang: string;
@@ -8,6 +9,9 @@ interface Props {
 
 const { lang, t } = Astro.props;
 const h = t("home");
+
+// Event date: December 5th, 2025
+const eventDate = new Date("2025-12-05T00:00:00-03:00"); // Chile timezone (UTC-3)
 ---
 
 <section class="flex flex-col items-center justify-center">
@@ -24,5 +28,9 @@ const h = t("home");
         <a href={`/${lang}`} tabindex="-1">
             <Button variant="hackscate_outline" size="hackscate_lg">{h.learn_more}</Button>
         </a>
+    </div>
+
+    <div class="mt-16">
+        <Countdown client:load targetDate={eventDate} />
     </div>
 </section>
