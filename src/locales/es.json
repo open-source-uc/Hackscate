@@ -35,7 +35,7 @@
     },
     "sponsors": {
         "layout_title": "Sponsors",
-        "layout_description": "Explora oportunidades de patrocinio con Hackscate",
+        "layout_description": "Conviértete en sponsor de Hackscate y conecta con 60 innovadores tecnológicos de la UC. Acceso exclusivo a talento emergente en desarrollo, diseño e innovación.",
         "sidebar": [
             {
                 "id": "introduction",
@@ -143,7 +143,7 @@
         }
     },
     "faq": {
-        "layout_title": "Preguntas Frecuentes",
+        "layout_title": "Preguntas Frecuentes - Hackscate 2025",
         "title": "Preguntas Frecuentes",
         "questions": [
             {
@@ -213,8 +213,8 @@
         ]
     },
     "schedule": {
-        "layout_title": "Itinerario",
-        "layout_description": "Descubre el itinerario de actividades de Hackscate",
+        "layout_title": "Itinerario - Hackscate 2025",
+        "layout_description": "Revisa el itinerario completo de Hackscate 2025. 9 horas de hackathon, mentorías, talleres y networking en el Campus Oriente UC.",
         "sidebar": {
             "title": "Itinerario del Evento"
         }

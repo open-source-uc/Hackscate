@@ -9,14 +9,23 @@ interface Props {
     description?: string;
     activeNavBar?: boolean;
     lang: "es" | "en";
+    ogImage?: string;
 }
+
+const { lang } = Astro.props;
 
 const {
     title = "Hackscate",
-    description = "Hackaton Open Source UC - Hackscate",
-    lang,
+    description = lang === "es" 
+        ? "La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile. 9 horas para crear soluciones innovadoras con estudiantes de todas las carreras."
+        : "The tech-innovation hackathon of Pontificia Universidad Católica de Chile. 9 hours to build innovative solutions with students from all majors.",
     activeNavBar = true,
+    ogImage = "/og-image.png",
 } = Astro.props;
+
+// Build full URL for OG tags
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL(ogImage, Astro.site);
 ---
 
 <!doctype html>
@@ -28,6 +37,26 @@ const {
         <meta name="author" content="Open Source UC" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
+        <link rel="canonical" href={canonicalURL} />
+        
+        <!-- OpenGraph Meta Tags -->
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:image" content={ogImageURL} />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:site_name" content="Hackscate" />
+        <meta property="og:locale" content={lang === "es" ? "es_CL" : "en_US"} />
+        <meta property="og:locale:alternate" content={lang === "es" ? "en_US" : "es_CL"} />
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImageURL} />
+        <meta name="twitter:image:alt" content={title} />
+        
         <title>{title}</title>
     </head>
     <body class="relative bg-background font-sans text-foreground min-h-dvh">
