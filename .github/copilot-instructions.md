@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Hackscate es el sitio web oficial del evento de hackathon organizado por Open Source UC (OSUC) de la Pontificia Universidad Católica de Chile. Es una aplicación web estática construida con tecnologías modernas.
+Hackscate es el sitio web oficial del evento de hackathon organizado por Open Source UC (OSUC) en la Pontificia Universidad Católica de Chile. Es una aplicación web estática construida con tecnologías modernas.
 
 ## Stack Tecnológico
 

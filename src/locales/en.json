@@ -7,7 +7,7 @@
         "schedule": "SCHEDULE"
     },
     "home": {
-        "subtitle": "The tech-innovation hackathon of Pontificia Universidad Católica de Chile",
+        "subtitle": "The tech-innovation hackathon at Pontificia Universidad Católica de Chile",
         "join": "JOIN TODAY",
         "learn_more": "LEARN MORE"
     },
@@ -136,9 +136,9 @@
             "help": "Help"
         },
         "legal": {
-            "disclaimer": "Independent unofficial project.",
-            "disclaimer_full": "Not affiliated, associated, authorized, endorsed by, or in any way officially connected with Pontificia Universidad Católica de Chile.",
-            "copyright": "Open Source eUC.",
+            "disclaimer": "Independent project.",
+            "disclaimer_full": "This event is organized by Open Source UC and is not managed by Pontificia Universidad Católica de Chile.",
+            "copyright": "Open Source UC.",
             "terms": "Terms",
             "privacy": "Privacy"
         }

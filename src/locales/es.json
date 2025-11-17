@@ -7,7 +7,7 @@
         "schedule": "ITINERARIO"
     },
     "home": {
-        "subtitle": "La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile",
+        "subtitle": "La hackathon de innovación tecnológica en la Pontificia Universidad Católica de Chile",
         "join": "SÉ PARTE",
         "learn_more": "APRENDE MÁS"
     },
@@ -26,7 +26,7 @@
         "title1": "Organiza",
         "title2": "Apoya",
         "title3": "Auspicia",
-        "subtitle": "La comunidad de innovación tecnológica estudiantil de la Pontificia Universidad Católica de Chile"
+        "subtitle": "La comunidad de innovación tecnológica estudiantil en la Pontificia Universidad Católica de Chile"
     },
     "questions": {
         "title": "¿Tienes Preguntas?",
@@ -60,7 +60,7 @@
         ],
         "introduction_section": {
             "title": "Sobre nosotros",
-            "p1": "Open Source UC (OSUC) es la principal comunidad de innovación tecnológica estudiantil de la Pontificia Universidad Católica de Chile.",
+            "p1": "Open Source UC (OSUC) es la principal comunidad de innovación tecnológica estudiantil en la Pontificia Universidad Católica de Chile.",
             "p2": "Desde 2006, hemos liderado proyectos de innovación tecnológica creados por estudiantes, para estudiantes, fomentando la colaboración y el aprendizaje práctico.",
             "p3": "Ahora, expandimos nuestro impacto con Hackscate: un espacio donde las ideas se transforman en soluciones reales."
         },
@@ -135,9 +135,9 @@
             "help": "Ayuda"
         },
         "legal": {
-            "disclaimer": "Proyecto independiente no oficial.",
-            "disclaimer_full": "No está afiliado, asociado, autorizado, respaldado por, o de ninguna manera conectado oficialmente con la Pontificia Universidad Católica de Chile.",
-            "copyright": "Open Source eUC.",
+            "disclaimer": "Proyecto independiente",
+            "disclaimer_full": "Este evento es organizado por Open Source UC y no es administrado por la Pontificia Universidad Católica de Chile.",
+            "copyright": "Open Source UC.",
             "terms": "Términos",
             "privacy": "Privacidad"
         }
@@ -156,7 +156,7 @@
             },
             {
                 "question": "¿Quién puede participar?",
-                "answer": "El evento está abierto a todo estudiante universitario, sin importar su carrera o nivel de experiencia. No es exclusivo para estudiantes de la Pontificia Universidad Católica de Chile."
+                "answer": "El evento está abierto a todo estudiante universitario, sin importar su carrera o nivel de experiencia. No es exclusivo para estudiantes en la Pontificia Universidad Católica de Chile."
             },
             {
                 "question": "¿Necesito experiencia previa en programación?",
@@ -191,7 +191,7 @@
                 "answer": "Los proyectos serán evaluados por un panel de jueces basado en criterios como innovación, impacto, ejecución y presentación."
             },
             {
-                "question": "¿Puedo asistir si no soy estudiante de la Pontificia Universidad Católica de Chile?",
+                "question": "¿Puedo asistir si no soy estudiante en la Pontificia Universidad Católica de Chile?",
                 "answer": "Sí, el evento está abierto a todos los estudiantes universitarios, independientemente de su institución educativa."
             },
             {
