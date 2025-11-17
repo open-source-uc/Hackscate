@@ -157,20 +157,61 @@
             },
             {
                 "question": "Who can participate?",
-                "answer": "The event is open to all students from Pontificia Universidad Católica de Chile, regardless of their major or level of experience."
+                "answer": "The event is open to all university students, regardless of their major or level of experience. It is not exclusive to students from Pontificia Universidad Católica de Chile."
             },
             {
                 "question": "Do I need prior programming experience?",
-                "answer": "No! Hackscate is designed to be accessible to everyone. Whether you're a beginner or experienced developer, you'll find your place in a team."
+                "answer": "No! Hackscate is designed to be accessible to everyone. Whether you're a beginner or experienced developer, you'll find your place here."
             },
             {
                 "question": "How do I register?",
-                "answer": "Registration will open soon! Keep an eye on our website and social media for announcements."
+                "answer": "You can register through our official website or on the event page at MLH."
             },
             {
                 "question": "Is there a participation fee?",
                 "answer": "No, participation in Hackscate is completely free for all attendees."
+            },
+            {
+                "question": "Can I participate alone or do I need a team?",
+                "answer": "You can participate alone or form a team of up to 3 people. Both options are welcome!"
+            },
+            {
+                "question": "What should I bring to the event?",
+                "answer": "We recommend bringing your laptop, charger, student ID, and any other materials you consider necessary for your project."
+            },
+            {
+                "question": "Will there be food and drinks during the event?",
+                "answer": "Yes, we will provide food and drinks for all attendees throughout the event."
+            },
+            {
+                "question": "Will there be options for special diets?",
+                "answer": "Yes, we will offer options for special diets. Please let us know your needs when you register."
+            },
+            {
+                "question": "How are the winners selected?",
+                "answer": "Projects will be evaluated by a panel of judges based on criteria such as innovation, impact, execution, and presentation."
+            },
+            {
+                "question": "Can I attend if I'm not a student at Pontificia Universidad Católica de Chile?",
+                "answer": "Yes, the event is open to all university students, regardless of their educational institution."
+            },
+            {
+                "question": "Will there be prizes for the winners?",
+                "answer": "Yes, there will be prizes for the winning teams, which will be announced during the event."
+            },
+            {
+                "question": "Can I use any technology for my project?",
+                "answer": "Yes, you are free to use any technology, programming language, or platform you prefer to develop your project."
+            },
+            {
+                "question": "Will there be mentors available during the event?",
+                "answer": "Yes, we will have mentors available to help and guide you throughout the event."
+            },
+            {
+                "question": "What should my project focus on?",
+                "answer": "We recommend focusing on solving real problems facing a university community, but you are free to explore any innovative idea you have in mind."
             }
+            
         ]
     },
     "schedule": {

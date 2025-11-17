@@ -156,19 +156,59 @@
             },
             {
                 "question": "¿Quién puede participar?",
-                "answer": "El evento está abierto a todos los estudiantes de la Pontificia Universidad Católica de Chile, sin importar su carrera o nivel de experiencia."
+                "answer": "El evento está abierto a todo estudiante universitario, sin importar su carrera o nivel de experiencia. No es exclusivo para estudiantes de la Pontificia Universidad Católica de Chile."
             },
             {
                 "question": "¿Necesito experiencia previa en programación?",
-                "answer": "¡No! Hackscate está diseñada para ser accesible para todos. Ya seas principiante o desarrollador experimentado, encontrarás tu lugar en un equipo."
+                "answer": "¡No! Hackscate está diseñada para ser accesible para todos. Ya seas principiante o desarrollador experimentado, encontrarás tu lugar aquí."
             },
             {
                 "question": "¿Cómo me registro?",
-                "answer": "¡La inscripción se abrirá pronto! Mantente atento a nuestro sitio web y redes sociales para anuncios."
+                "answer": "Puedes registrarte a través de nuestro sitio web oficial o en la página del evento en MLH."
             },
             {
                 "question": "¿Hay algún costo de participación?",
                 "answer": "No, la participación en Hackscate es completamente gratuita para todos los asistentes."
+            },
+            {
+                "question": "¿Puedo participar solo o necesito un equipo?",
+                "answer": "Puedes participar solo o formar un equipo de hasta 3 personas. ¡Ambas opciones son bienvenidas!"
+            },
+            {
+                "question": "¿Qué debo llevar al evento?",
+                "answer": "Te recomendamos llevar tu laptop, cargador, identificación de estudiante y cualquier otro material que consideres necesario para tu proyecto."
+            },
+            {
+                "question": "¿Habrá comida y bebidas durante el evento?",
+                "answer": "Sí, proporcionaremos comida y bebidas para todos los asistentes durante el evento."
+            },
+            {
+                "question": "¿Habrá opciones para dietas especiales?",
+                "answer": "Sí, ofreceremos opciones para dietas especiales. Por favor, indícanos tus necesidades al momento de registrarte."
+            },
+            {
+                "question": "¿Cómo se seleccionan los ganadores?",
+                "answer": "Los proyectos serán evaluados por un panel de jueces basado en criterios como innovación, impacto, ejecución y presentación."
+            },
+            {
+                "question": "¿Puedo asistir si no soy estudiante de la Pontificia Universidad Católica de Chile?",
+                "answer": "Sí, el evento está abierto a todos los estudiantes universitarios, independientemente de su institución educativa."
+            },
+            {
+                "question": "¿Habrá premios para los ganadores?",
+                "answer": "Sí, habrá premios para los equipos ganadores, que se anunciarán durante el evento."
+            },
+            {
+                "question": "¿Puedo usar cualquier tecnología para mi proyecto?",
+                "answer": "Sí, eres libre de usar cualquier tecnología, lenguaje de programación o plataforma que prefieras para desarrollar tu proyecto."
+            },
+            {
+                "question": "¿Habrá mentores disponibles durante el evento?",
+                "answer": "Sí, contaremos con mentores que estarán disponibles para ayudarte y guiarte durante el evento."
+            },
+            {
+                "question": "¿En qué se debiése enfocar mi proyecto?",
+                "answer": "Te recomendamos enfocarte en resolver problemas reales que enfrente una comunidad universitaria, pero eres libre de explorar cualquier idea innovadora que tengas en mente."
             }
         ]
     },
