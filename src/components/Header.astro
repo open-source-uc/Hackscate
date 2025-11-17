@@ -16,6 +16,13 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 
 const nav = t("nav");
+
+// Get the opposite language for the toggle button
+const oppositeLanguage = lang === "es" ? "en" : "es";
+const languageLabel = lang === "es" ? "EN" : "ES";
+
+// Get current path without locale to build the language toggle URL
+const currentPath = Astro.url.pathname.replace(/^\/(es|en)/, '') || '';
 ---
 
 <header class="bg-muted mx-8 my-8 px-12 py-2 tablet:py-1 z-50 border-1 border-accent rounded-tl-2xl rounded-br-2xl" role="banner">
@@ -44,20 +51,32 @@ const nav = t("nav");
                     <Button variant="ghost" size="lg">{nav.sponsors}</Button>
                 </a>
             </div>
-
-            
         </nav>
 
-        <a
-                href="#"
-                aria-label="Únete Hoy"
-                class="hidden tablet:inline"
+        <div class="flex flex-row items-center gap-8">
+
+            <!-- Language Toggle Button -->
+            <a
+                href={`/${oppositeLanguage}${currentPath}`}
+                class="hidden md:inline ml-4"
+                aria-label={`Switch to ${oppositeLanguage === 'es' ? 'Spanish' : 'English'}`}
                 tabindex="-1"
             >
-            <Button variant="hackscate" size="hackscate">
-                {nav.registration}
-            </Button>
-        </a>
+                <Button variant="ghost" size="sm">
+                    {languageLabel}
+                </Button>
+            </a>
+            <a
+                    href="#"
+                    aria-label="Únete Hoy"
+                    class="hidden tablet:inline"
+                    tabindex="-1"
+                >
+                <Button variant="hackscate" size="hackscate">
+                    {nav.registration}
+                </Button>
+            </a>
+        </div>
         
         <label
             for="menu-toggle"
@@ -77,6 +96,11 @@ const nav = t("nav");
             </a>
             <a href={`/${lang}/sponsors`} class="w-full" tabindex="-1">
                 <Button variant="ghost" size="lg" className="w-full justify-start">{nav.sponsors}</Button>
+            </a>
+            <a href={`/${oppositeLanguage}${currentPath}`} class="w-full" aria-label={`Switch to ${oppositeLanguage === 'es' ? 'Spanish' : 'English'}`} tabindex="-1">
+                <Button variant="ghost" size="lg" className="w-full justify-start">
+                    {languageLabel}
+                </Button>
             </a>
             <a href="#" class="w-full mt-2" aria-label="Únete Hoy" tabindex="-1">
                 <Button variant="hackscate" size="hackscate" className="w-full">

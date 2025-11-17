@@ -4,7 +4,7 @@
         "location": "UBICACIÓN",
         "sponsors": "SPONSORS",
         "faq": "FAQ",
-        "schedule": "HORARIO"
+        "schedule": "ITINERARIO"
     },
     "home": {
         "subtitle": "La hackathon de innovación tecnológica de la Pontificia Universidad Católica de Chile",
@@ -116,7 +116,7 @@
         "event": {
             "title": "Evento",
             "home": "Inicio",
-            "schedule": "Horario",
+            "schedule": "Itinerario",
             "faq": "Preguntas Frecuentes"
         },
         "info": {
