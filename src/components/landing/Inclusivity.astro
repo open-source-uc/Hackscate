@@ -1,0 +1,26 @@
+---
+import { Button } from "@/components/ui/button";
+
+interface Props {
+    lang: string;
+    t: ReturnType<typeof import("@/i18n/utils").useTranslations>;
+}
+
+const { lang, t } = Astro.props;
+const e = t("explainer");
+---
+
+<section class="flex flex-col items-center justify-center px-6 md:px-12 max-w-5xl mx-auto">
+
+    <h2 class="text-xl font-width-wide tablet:text-2xl desktop:text-3xl font-semibold text-center pb-8">
+        {e.inclusivity_title}
+    </h2>
+
+    <p class="text-center text-muted-foreground leading-relaxed max-w-3xl pb-8">
+        {e.inclusivity_text}
+    </p>
+
+    <a href="https://events.mlh.io/events/13213-hackscate-chile" tabindex="-1">
+        <Button variant="hackscate" size="hackscate_lg">{e.inclusivity_button}</Button>
+    </a>
+</section>

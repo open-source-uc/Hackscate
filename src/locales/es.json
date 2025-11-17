@@ -13,9 +13,14 @@
     },
     "explainer": {
         "title": "Una Hackathon de Innovación para Tod@s",
-        "p1": "Hackscate es una hackathon estudiantil de 9 horas en la que desarrollarás soluciones tecnológicas innovadoras a problemáticas universitarias mientras ganas premios.",
-        "p2": "No importa tu carrera o nivel de experiencia; Hackscate está pensada para ser un espacio de aprendizaje y colaboración",
-        "p3": "Te esperamos en las instalaciones del"
+        "overview_title": "¿Qué es Hackscate?",
+        "overview_text": "Hackscate es una hackathon estudiantil de 9 horas en donde podrás construir soluciones tecnológicas innovadoras. No importa tu carrera o experiencia, únete para crear, aprender y pasarla bien en un evento único.",
+        "inclusivity_title": "¿Cómo Funciona?",
+        "inclusivity_text": "Participa solo o forma un equipo de hasta 3 personas. ¡No necesitas experiencia previa! Tu desafío: desarrollar una solución a un problema real de la comunidad universitaria. Seas principiante o expert@, tod@s tienen algo que aportar.",
+        "inclusivity_button": "Ver Bases y Reglas",
+        "venue_title": "Cuándo y Dónde",
+        "venue_text": "Únete a nosotros el viernes 5 de diciembre de 2025 en el Centro de Extensión, Campus Oriente, Pontificia Universidad Católica de Chile",
+        "go_to_schedule_button": "Conoce el Itinerario"
     },
     "sponsors_explainer": {
         "title1": "Organiza",

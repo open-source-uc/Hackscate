@@ -1,0 +1,35 @@
+---
+import { Button } from "@/components/ui/button";
+import BrandedImage from "@/components/ui/BrandedImage.astro";
+
+interface Props {
+    lang: string;
+    t: ReturnType<typeof import("@/i18n/utils").useTranslations>;
+}
+
+const { lang, t } = Astro.props;
+const e = t("explainer");
+---
+
+<section class="flex flex-col items-center justify-center gap-6 px-6 md:px-12 max-w-5xl mx-auto">
+    
+    <h2 class="text-xl font-width-wide tablet:text-2xl desktop:text-3xl font-semibold text-center">
+        {e.venue_title}
+    </h2>
+
+    <p class="text-center text-muted-foreground leading-relaxed max-w-3xl">
+        {e.venue_text}
+    </p>
+
+    <BrandedImage
+        src="/oriente5.webp"
+        alt="Hackscate 2025 event photo"
+        width={400}
+        height={100}
+        class="shadow-lg rounded-lg"
+    />
+
+    <a href={`/${lang}/schedule`} tabindex="-1">
+        <Button variant="hackscate" size="hackscate_lg">{e.go_to_schedule_button}</Button>
+    </a>
+</section>

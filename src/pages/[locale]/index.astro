@@ -2,6 +2,8 @@
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/landing/Hero.astro";
 import Explainer from "@components/landing/Explainer.astro";
+import Inclusivity from "@components/landing/Inclusivity.astro";
+import Venue from "@components/landing/Venue.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import Sponsors from "@/components/landing/Sponsors.astro";
 import Questions from "@/components/landing/Questions.astro";
@@ -20,6 +22,10 @@ export async function getStaticPaths() {
         <Hero lang={lang} t={t} />
 
         <Explainer lang={lang} t={t} />
+
+        <Inclusivity lang={lang} t={t} />
+
+        <Venue lang={lang} t={t} />
 
         <Sponsors lang={lang} t={t} />
 
