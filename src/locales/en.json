@@ -19,8 +19,10 @@
         "caption": "Centro de Extensión, Campus Oriente, Pontificia Universidad Católica de Chile"
     },
     "sponsors_explainer": {
-        "title1": "Support",
-        "title2": "Sponsor"
+        "title1": "Organizer",
+        "title2": "Support",
+        "title3": "Sponsor",
+        "subtitle": "The student tech-innovation community of Pontificia Universidad Católica de Chile"
     },
     "questions": {
         "title": "Have Questions?",
@@ -80,6 +82,7 @@
             "table_data": {
                 "title": "Unique Sponsorship Level",
                 "price": "$500 USD",
+                "subtitle": "What's included",
                 "benefits": [
                     {
                         "name": "Recognition at Opening Ceremony"

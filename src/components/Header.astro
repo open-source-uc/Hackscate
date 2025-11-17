@@ -34,17 +34,14 @@ const nav = t("nav");
 
             <div
                 class="hidden md:flex ml-8 gap-2">
-                <a href={`/${lang}`} tabindex="-1">
-                    <Button variant="ghost" size="lg">{nav.location}</Button>
-                </a>
-                <a href={`/${lang}/sponsors`} tabindex="-1">
-                    <Button variant="ghost" size="lg">{nav.sponsors}</Button>
+                <a href={`/${lang}/schedule`} tabindex="-1">
+                    <Button variant="ghost" size="lg">{nav.schedule}</Button>
                 </a>
                 <a href={`/${lang}/faq`} tabindex="-1">
                     <Button variant="ghost" size="lg">{nav.faq}</Button>
                 </a>
-                <a href={`/${lang}/schedule`} tabindex="-1">
-                    <Button variant="ghost" size="lg">{nav.schedule}</Button>
+                <a href={`/${lang}/sponsors`} tabindex="-1">
+                    <Button variant="ghost" size="lg">{nav.sponsors}</Button>
                 </a>
             </div>
 
@@ -72,17 +69,14 @@ const nav = t("nav");
     <!-- Mobile Menu -->
     <div class="md:hidden max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 ease-in-out">
         <nav class="flex flex-col gap-2 py-4 border-t border-border mt-2" aria-label="Navegación móvil">
-            <a href={`/${lang}`} class="w-full" tabindex="-1">
-                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.location}</Button>
-            </a>
-            <a href={`/${lang}/sponsors`} class="w-full" tabindex="-1">
-                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.sponsors}</Button>
+            <a href={`/${lang}/schedule`} class="w-full" tabindex="-1">
+                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.schedule}</Button>
             </a>
             <a href={`/${lang}/faq`} class="w-full" tabindex="-1">
                 <Button variant="ghost" size="lg" className="w-full justify-start">{nav.faq}</Button>
             </a>
-            <a href={`/${lang}/schedule`} class="w-full" tabindex="-1">
-                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.schedule}</Button>
+            <a href={`/${lang}/sponsors`} class="w-full" tabindex="-1">
+                <Button variant="ghost" size="lg" className="w-full justify-start">{nav.sponsors}</Button>
             </a>
             <a href="#" class="w-full mt-2" aria-label="Únete Hoy" tabindex="-1">
                 <Button variant="hackscate" size="hackscate" className="w-full">

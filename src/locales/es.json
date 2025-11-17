@@ -18,8 +18,10 @@
         "p3": "Te esperamos en las instalaciones del"
     },
     "sponsors_explainer": {
-        "title1": "Apoya",
-        "title2": "Auspicia"
+        "title1": "Organiza",
+        "title2": "Apoya",
+        "title3": "Auspicia",
+        "subtitle": "La comunidad de innovación tecnológica estudiantil de la Pontificia Universidad Católica de Chile"
     },
     "questions": {
         "title": "¿Tienes Preguntas?",
@@ -27,7 +29,7 @@
         "button": "Ver Preguntas Frecuentes"
     },
     "sponsors": {
-        "layout_title": "Patrocinadores",
+        "layout_title": "Sponsors",
         "layout_description": "Explora oportunidades de patrocinio con Hackscate",
         "sidebar": [
             {
@@ -79,6 +81,7 @@
             "table_data": {
                 "title": "Nivel de Patrocinio Único",
                 "price": "$500 USD",
+                "subtitle": "Lo que incluye",
                 "benefits": [
                     {
                         "name": "Reconocimiento en Ceremonia de Apertura"

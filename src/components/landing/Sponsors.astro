@@ -8,34 +8,46 @@ const { lang, t } = Astro.props;
 const se = t("sponsors_explainer");
 ---
 
-<section class="flex flex-col items-center justify-center pt-28 px-12">
-    <section class="mb-20">
+<section class="flex flex-col items-center justify-center px-12">
+    <section class="mb-20 flex flex-col items-center gap-8">
         <h2 class="text-lg font-width-wide tablet:text-xl desktop:text-2xl font-semibold text-center pb-8">
             {se.title1}
         </h2>
 
         <img
+            src="/logos/OSUC.svg"
+            alt="Open Source UC - Pontificia Universidad Católica de Chile"
+            class="w-[200px] tablet:w-[220px] desktop:w-[250px] h-auto fill-foreground"
+        />
+    </section>
+
+    <section class="mb-20">
+        <h2 class="text-lg font-width-wide tablet:text-xl desktop:text-2xl font-semibold text-center pb-8">
+            {se.title2}
+        </h2>
+
+        <img
             src="/logos/UC.svg"
-            alt="Support Hackscate"
+            alt="Dirección de Transformación Digital - Pontificia Universidad Católica de Chile"
             class="w-[400px] tablet:w-[450px] desktop:w-[500px] h-auto"
         />
     </section>
 
     <section class="mb-20">
         <h2 class="text-lg font-width-wide tablet:text-xl desktop:text-2xl font-semibold text-center pb-12">
-            {se.title2}
+            {se.title3}
         </h2>
 
         <div class="flex flex-col justify-center items-center tablet:flex-row gap-16">
             <img
             src="/logos/GitHub.svg"
-            alt="Support Hackscate"
+            alt="GitHub"
             class="w-[150px] tablet:w-[180px] desktop:w-[220px] h-auto"
             />
 
             <img
             src="/logos/MLH Google.svg"
-            alt="Support Hackscate"
+            alt="Major League Hacking & Google"
             class="w-[200px] tablet:w-[250px] desktop:w-[300px] h-auto"
             />
         </div>

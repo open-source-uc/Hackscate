@@ -1,6 +1,7 @@
 ---
 interface Props {
-    icon?: any;
+    number?: number;
+    title?: string;
     text: string;
     image?: string;
     imageAlt?: string;
@@ -8,29 +9,25 @@ interface Props {
 }
 
 const { 
-    icon: Icon, 
+    number,
+    title,
     text, 
     image, 
     imageAlt = "", 
     class: className = "",
     ...rest 
 } = Astro.props;
+
+const formattedNumber = number ? number.toString().padStart(2, '0') : null;
 ---
 
 <div
     class:list={[
-        "relative rounded-tl-2xl rounded-br-2xl bg-card border border-border overflow-hidden flex flex-col",
+        "relative rounded-lg bg-card border border-border overflow-hidden flex flex-col",
         className
     ]}
     {...rest}
 >
-    <!-- Icon at top-left -->
-    {Icon && (
-        <div class="absolute top-8 right-8 z-10">
-            <Icon class="w-8 h-8 tablet:w-10 tablet:h-10" />
-        </div>
-    )}
-
     <!-- Optional Image -->
     {image && (
         <div class="flex-1 min-h-[200px]">
@@ -44,11 +41,18 @@ const {
         </div>
     )}
 
-    <!-- Text at bottom -->
-    <div class:list={[
-        "p-6 mt-16",
-        Icon && !image && "pt-16"
-    ]}>
+    <!-- Content -->
+    <div class="px-6 py-8 flex flex-col gap-4">
+        {formattedNumber && (
+            <span class="text-lg font-semibold font-width-narrow text-muted-foreground">
+                {formattedNumber}.
+            </span>
+        )}
+        {title && (
+            <h3 class="text-xl font-bold text-foreground">
+                {title}
+            </h3>
+        )}
         <p class="text-foreground leading-relaxed">
             {text}
         </p>
