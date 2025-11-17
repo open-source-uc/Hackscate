@@ -28,57 +28,52 @@ const f = t("footer");
 				style="aspect-ratio: 2.5;"
 			/>
 
-			<!-- Navigation Section 1: Platform -->
+			<!-- Navigation Section 1: Event -->
 			<div class="flex flex-col items-center text-center space-y-3">
-				<h3 class="text-foreground text-sm font-medium">Plataforma</h3>
+				<h3 class="text-foreground text-sm font-medium">{f.event.title}</h3>
 				<ul class="space-y-2">
 					<li>
 						<a
-							href="/"
+							href={`/${lang}/`}
 							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Inicio</a
+							>{f.event.home}</a
 						>
 					</li>
 					<li>
 						<a
-							href="/catalog"
+							href={`/${lang}/schedule`}
 							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Catálogo</a
+							>{f.event.schedule}</a
 						>
 					</li>
 					<li>
 						<a
-							href="/recommendations"
-							class="text-muted-foreground hover:text-foreground hidden text-sm transition-colors"
-							>Recomendaciones</a
+							href={`/${lang}/faq`}
+							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
+							>{f.event.faq}</a
 						>
 					</li>
 				</ul>
 			</div>
 
-			<!-- Navigation Section 2: Resources -->
+			<!-- Navigation Section 2: Information -->
 			<div class="flex flex-col items-center text-center space-y-3">
-				<h3 class="text-foreground text-sm font-medium">Recursos</h3>
+				<h3 class="text-foreground text-sm font-medium">{f.info.title}</h3>
 				<ul class="space-y-2">
 					<li>
 						<a
-							href="/resources"
+							href={`/${lang}/sponsors`}
 							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Recursos</a
+							>{f.info.sponsors}</a
 						>
 					</li>
 					<li>
 						<a
-							href="/resources/documentation"
+							href="https://osuc.dev"
+							target="_blank"
+							rel="noopener noreferrer"
 							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Documentación</a
-						>
-					</li>
-					<li>
-						<a
-							href="/admin"
-							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Administración</a
+							>{f.info.about}</a
 						>
 					</li>
 				</ul>
@@ -86,26 +81,19 @@ const f = t("footer");
 
 			<!-- Navigation Section 3: Support -->
 			<div class="flex flex-col items-center text-center space-y-3">
-				<h3 class="text-foreground text-sm font-medium">Soporte</h3>
+				<h3 class="text-foreground text-sm font-medium">{f.support.title}</h3>
 				<ul class="space-y-2">
 					<li>
 						<a
+							href="mailto:hack@osuc.dev"
+							class="text-muted-foreground hover:text-foreground text-sm transition-colors">{f.support.contact}</a
+						>
+					</li>
+					<li>
+						<a
 							href="mailto:help@osuc.dev"
-							class="text-muted-foreground hover:text-foreground text-sm transition-colors">Ayuda</a
-						>
-					</li>
-					<li>
-						<a
-							href="mailto:contact@osuc.dev"
 							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Contacto</a
-						>
-					</li>
-					<li>
-						<a
-							href="mailto:feedback@osuc.dev"
-							class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-							>Feedback</a
+							>{f.support.help}</a
 						>
 					</li>
 				</ul>
@@ -116,27 +104,26 @@ const f = t("footer");
 		<div
 			class="border-border mt-12 flex flex-col space-y-6 border-t pt-8 md:flex-row md:justify-between md:items-center md:space-y-0"
 		>
-			<div class="text-muted-foreground text-sm text-center tablet:text-left">
-				<strong>Proyecto independiente no oficial.</strong>
-				<br /> No está afiliado, asociado, autorizado, respaldado por, <br class="hidden tablet:inline" /> o de ninguna manera conectado
-				oficialmente con la Pontificia Universidad Católica de Chile.
+			<div class="text-muted-foreground text-sm text-center max-w-lg tablet:text-left">
+				<strong>{f.legal.disclaimer}</strong>
+				<br /> {f.legal.disclaimer_full}
 			</div>
 
 			<!-- Left: Legal Links -->
-			<div class="flex flex-col space-y-3 md:flex-row md:items-center md:space-y-0 md:space-x-6 text-center tablet:text-left">
+			<div class="flex flex-col space-y-3 md:flex-row md:items-center md:space-y-0 md:space-x-12 text-center tablet:text-left">
 				<p class="text-muted-foreground text-sm">
-					© {new Date().getFullYear()} Open Source eUC.
+					© {new Date().getFullYear()} {f.legal.copyright}
 				</p>
 				<div class="flex space-x-6 justify-center tablet:justify-start">
 					<a
-						href="/terms"
+						href={`/${lang}/terms`}
 						class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-						>Términos</a
+						>{f.legal.terms}</a
 					>
 					<a
-						href="/privacy"
+						href={`/${lang}/privacy`}
 						class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-						>Privacidad</a
+						>{f.legal.privacy}</a
 					>
 				</div>
 			</div>

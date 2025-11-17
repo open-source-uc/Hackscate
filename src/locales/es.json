@@ -112,7 +112,30 @@
     },
     "footer": {
         "made_by": "Hecho con ❤️ por Open Source UC",
-        "change_to": "Change to English"
+        "change_to": "Change to English",
+        "event": {
+            "title": "Evento",
+            "home": "Inicio",
+            "schedule": "Horario",
+            "faq": "Preguntas Frecuentes"
+        },
+        "info": {
+            "title": "Información",
+            "sponsors": "Conviértete en Sponsor",
+            "about": "Sobre OSUC"
+        },
+        "support": {
+            "title": "Soporte",
+            "contact": "Contacto",
+            "help": "Ayuda"
+        },
+        "legal": {
+            "disclaimer": "Proyecto independiente no oficial.",
+            "disclaimer_full": "No está afiliado, asociado, autorizado, respaldado por, o de ninguna manera conectado oficialmente con la Pontificia Universidad Católica de Chile.",
+            "copyright": "Open Source eUC.",
+            "terms": "Términos",
+            "privacy": "Privacidad"
+        }
     },
     "faq": {
         "layout_title": "Preguntas Frecuentes",
