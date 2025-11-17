@@ -61,15 +61,15 @@
         ],
         "introduction_section": {
             "title": "About us",
-            "p1": "Open Source UC (OSUC) is the student tech-innovation community of Pontificia Universidad Católica de Chile (UC).",
-            "p2": "Since 2006, we have driven innovation projects from students to students.",
-            "p3": "Today, we want to expand our impact alongside Hackscate."
+            "p1": "Open Source UC (OSUC) is the leading student tech-innovation community at Pontificia Universidad Católica de Chile.",
+            "p2": "Since 2006, we have led technology innovation projects created by students, for students, fostering collaboration and hands-on learning.",
+            "p3": "Now, we expand our impact with Hackscate: a space where ideas transform into real solutions."
         },
         "event_section": {
             "title": "The Event",
-            "p1": "The Event Hackscate will be the place for students - across careers and levels - to build a tech product together.",
-            "p2": "The event will focus on the student community at UC-Chile; we expect 60 innovators at our venue, Centro de Extensión, Campus Oriente, UC-Chile.",
-            "p3": "Hackscate will be taking place Friday, December 5th.",
+            "p1": "Hackscate is a 9-hour hackathon where students from all majors and levels collaborate to build innovative tech products that solve real problems.",
+            "p2": "We'll bring together 60 innovators at Centro de Extensión, Campus Oriente UC-Chile, creating a unique environment of creativity, learning, and networking.",
+            "p3": "The event will take place on Friday, December 5th, 2025.",
             "venue_title": "Centro de Extensión",
             "venue_location": "Campus Oriente, PUC"
         },

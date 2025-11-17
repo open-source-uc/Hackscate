@@ -16,7 +16,7 @@
             "title": "Opening Ceremony",
             "description": "Official welcome and event presentation",
             "type": "Ceremony",
-            "location": "Main Auditorium"
+            "location": "Main Stage"
         },
         {
             "id": "hacking-start",
@@ -25,7 +25,7 @@
             "title": "Hackathon Begins!",
             "description": "Teams start developing their projects",
             "type": "Hacking",
-            "location": "Main Auditorium"
+            "location": "Main Stage"
         },
         {
             "id": "lunch",
@@ -34,7 +34,7 @@
             "title": "Lunch",
             "description": "Lunch break",
             "type": "Break",
-            "location": "Outside the Auditorium"
+            "location": "Centro de Extensión Lobby"
         },
         {
             "id": "send_limit",
@@ -52,7 +52,7 @@
             "title": "Judges Evaluate Projects",
             "description": "Teams present their projects",
             "type": "Judging",
-            "location": "Main Auditorium"
+            "location": "Main Stage"
         },
         {
             "id": "awards",
@@ -61,7 +61,7 @@
             "title": "Awards Ceremony",
             "description": "Announcement of winners and prize distribution",
             "type": "Ceremony",
-            "location": "Main Auditorium"
+            "location": "Main Stage"
         },
         {
             "id": "closing",
@@ -70,7 +70,7 @@
             "title": "Closing Remarks",
             "description": "Official closing of the event and acknowledgments",
             "type": "Ceremony",
-            "location": "Main Auditorium"
+            "location": "Main Stage"
         }
     ]
 }

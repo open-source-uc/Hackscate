@@ -39,8 +39,8 @@ const { levels } = Astro.props;
             <ul class="flex flex-col gap-5 list-none">
                 {
                     levels.benefits.map((benefit, index) => (
-                        <li class="flex items-center gap-4">
-                            <CheckmarkIcon className="w-6 h-6 flex-shrink-0 text-accent" />
+                        <li class="flex items-start gap-4">
+                            <CheckmarkIcon className="w-5 h-5 tablet:w-6 tablet:h-6 flex-shrink-0 text-accent mt-0.5" />
                             <span class="text-base tablet:text-lg text-foreground leading-relaxed">
                                 {benefit.name}
                             </span>

@@ -60,15 +60,15 @@
         ],
         "introduction_section": {
             "title": "Sobre nosotros",
-            "p1": "Open Source UC (OSUC) es la comunidad de innovación tecnológica estudiantil de la Pontificia Universidad Católica de Chile (UC).",
-            "p2": "Desde 2006, hemos impulsado proyectos de innovación de estudiantes para estudiantes.",
-            "p3": "Hoy, queremos expandir nuestro impacto junto a Hackscate."
+            "p1": "Open Source UC (OSUC) es la principal comunidad de innovación tecnológica estudiantil de la Pontificia Universidad Católica de Chile.",
+            "p2": "Desde 2006, hemos liderado proyectos de innovación tecnológica creados por estudiantes, para estudiantes, fomentando la colaboración y el aprendizaje práctico.",
+            "p3": "Ahora, expandimos nuestro impacto con Hackscate: un espacio donde las ideas se transforman en soluciones reales."
         },
         "event_section": {
             "title": "El Evento",
-            "p1": "El Evento Hackscate será el lugar para que estudiantes - de todas las carreras y niveles - construyan juntos un producto tecnológico.",
-            "p2": "El evento se centrará en la comunidad estudiantil de la UC-Chile; esperamos 60 innovadores en nuestra sede, el Centro de Extensión, Campus Oriente, UC-Chile.",
-            "p3": "Hackscate se llevará a cabo el viernes 5 de diciembre.",
+            "p1": "Hackscate es una hackathon de 9 horas donde estudiantes de todas las carreras y niveles colaboran para construir productos tecnológicos innovadores que resuelvan problemas reales.",
+            "p2": "Reuniremos a 60 innovadores en el Centro de Extensión, Campus Oriente UC-Chile, creando un ambiente único de creatividad, aprendizaje y networking.",
+            "p3": "El evento se realizará el viernes 5 de diciembre de 2025.",
             "venue_title": "Centro de Extensión",
             "venue_location": "Campus Oriente, PUC"
         },
@@ -183,8 +183,8 @@
                 "answer": "Sí, proporcionaremos comida y bebidas para todos los asistentes durante el evento."
             },
             {
-                "question": "¿Habrá opciones para dietas especiales?",
-                "answer": "Sí, ofreceremos opciones para dietas especiales. Por favor, indícanos tus necesidades al momento de registrarte."
+                "question": "¿Habrá opciones de comida para restricciones alimentarias?",
+                "answer": "Sí, ofreceremos opciones de comida para restricciones alimentarias. Por favor, indícanos tus necesidades al momento de registrarte."
             },
             {
                 "question": "¿Cómo se seleccionan los ganadores?",
@@ -213,7 +213,7 @@
         ]
     },
     "schedule": {
-        "layout_title": "Itinerario - Hackscate 2025",
+        "layout_title": "Itinerario",
         "layout_description": "Revisa el itinerario completo de Hackscate 2025. 9 horas de hackathon, mentorías, talleres y networking en el Campus Oriente UC.",
         "sidebar": {
             "title": "Itinerario del Evento"
