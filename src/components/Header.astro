@@ -47,7 +47,7 @@ const currentPath = Astro.url.pathname.replace(/^\/(es|en)/, '') || '';
                 <a href={`/${lang}/faq`} tabindex="-1">
                     <Button variant="ghost" size="lg">{nav.faq}</Button>
                 </a>
-                <a href={`/${lang}/sponsors`} tabindex="-1">
+                <a href={`/${lang}/sponsors`} tabindex="-1" class="hidden">
                     <Button variant="ghost" size="lg">{nav.sponsors}</Button>
                 </a>
             </div>
@@ -67,7 +67,7 @@ const currentPath = Astro.url.pathname.replace(/^\/(es|en)/, '') || '';
                 </Button>
             </a>
             <a
-                    href="#"
+                    href="https://events.mlh.io/events/13213-hackscate-chile"
                     aria-label="Únete Hoy"
                     class="hidden tablet:inline"
                     tabindex="-1"
@@ -94,7 +94,7 @@ const currentPath = Astro.url.pathname.replace(/^\/(es|en)/, '') || '';
             <a href={`/${lang}/faq`} class="w-full" tabindex="-1">
                 <Button variant="ghost" size="lg" className="w-full justify-start">{nav.faq}</Button>
             </a>
-            <a href={`/${lang}/sponsors`} class="w-full" tabindex="-1">
+            <a href={`/${lang}/sponsors`} class="w-full hidden" tabindex="-1">
                 <Button variant="ghost" size="lg" className="w-full justify-start">{nav.sponsors}</Button>
             </a>
             <a href={`/${oppositeLanguage}${currentPath}`} class="w-full" aria-label={`Switch to ${oppositeLanguage === 'es' ? 'Spanish' : 'English'}`} tabindex="-1">
