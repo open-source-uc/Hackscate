@@ -8,9 +8,9 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://hackscate.osuc.dev',
-    
+
     i18n: {
-        defaultLocale: 'en',
+        defaultLocale: 'es',
         locales: ['en', 'es'],
         routing: {
             prefixDefaultLocale: true,

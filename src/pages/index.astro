@@ -2,52 +2,57 @@
 import "@/styles/global.css";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#111111" />
-    <meta http-equiv="refresh" content="0;url=/en/" />
-    <link rel="canonical" href="/en/" />
-    <link rel="alternate" hreflang="en" href="/en/" />
-    <link rel="alternate" hreflang="es" href="/es/" />
-    <link rel="alternate" hreflang="x-default" href="/en/" />
-    <title>Hackscate - Redirecting...</title>
-</head>
-<body class="bg-background text-foreground min-h-screen flex items-center justify-center">
-    <div class="flex flex-col items-center gap-6 px-8">
-        <!-- Logo -->
-        <div class="relative">
-            <div class="size-16 border-4 border-foreground/20 border-t-foreground rounded-full animate-spin"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#111111" />
+        <meta http-equiv="refresh" content="0;url=/en/" />
+        <link rel="canonical" href="/en/" />
+        <link rel="alternate" hreflang="en" href="/en/" />
+        <link rel="alternate" hreflang="es" href="/es/" />
+        <link rel="alternate" hreflang="x-default" href="/es/" />
+        <title>Hackscate - Redirecting...</title>
+    </head>
+    <body
+        class="bg-background text-foreground min-h-screen flex items-center justify-center"
+    >
+        <div class="flex flex-col items-center gap-6 px-8">
+            <!-- Logo -->
+            <div class="relative">
+                <div
+                    class="size-16 border-4 border-foreground/20 border-t-foreground rounded-full animate-spin"
+                >
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h1
+                    class="text-4xl tablet:text-6xl font-bold font-width-wide mb-4"
+                >
+                    HACKSCATE
+                </h1>
+                <p class="text-muted-foreground">Redirecting...</p>
+            </div>
+
+            <!-- Links para SEO y usuarios -->
+            <nav class="flex gap-4 mt-8" aria-label="Language selection">
+                <a
+                    href="/en/"
+                    class="px-6 py-2 rounded-tl-2xl rounded-br-2xl bg-foreground text-background font-semibold hover:bg-foreground/80 transition-all"
+                    hreflang="en"
+                >
+                    English
+                </a>
+                <a
+                    href="/es/"
+                    class="px-6 py-2 rounded-tl-2xl rounded-br-2xl border border-foreground text-foreground font-semibold hover:bg-foreground hover:text-background transition-all"
+                    hreflang="es"
+                >
+                    Español
+                </a>
+            </nav>
         </div>
-        
-        <div class="text-center">
-            <h1 class="text-4xl tablet:text-6xl font-bold font-width-wide mb-4">
-                HACKSCATE
-            </h1>
-            <p class="text-muted-foreground">
-                Redirecting...
-            </p>
-        </div>
-        
-        <!-- Links para SEO y usuarios -->
-        <nav class="flex gap-4 mt-8" aria-label="Language selection">
-            <a 
-                href="/en/" 
-                class="px-6 py-2 rounded-tl-2xl rounded-br-2xl bg-foreground text-background font-semibold hover:bg-foreground/80 transition-all"
-                hreflang="en"
-            >
-                English
-            </a>
-            <a 
-                href="/es/" 
-                class="px-6 py-2 rounded-tl-2xl rounded-br-2xl border border-foreground text-foreground font-semibold hover:bg-foreground hover:text-background transition-all"
-                hreflang="es"
-            >
-                Español
-            </a>
-        </nav>
-    </div>
-</body>
+    </body>
 </html>
