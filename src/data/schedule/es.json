@@ -21,7 +21,7 @@
         {
             "id": "hacking-start",
             "start_time": "09:20",
-            "end_time": "17:00",
+            "end_time": "09:20",
             "title": "¡Comienza el Hackathon!",
             "description": "Los equipos comienzan a desarrollar sus proyectos",
             "type": "Hacking",
@@ -32,9 +32,18 @@
             "start_time": "14:00",
             "end_time": "15:00",
             "title": "Almuerzo",
-            "description": "Pausa para almorzar",
+            "description": "Pausa para pizzas y bebestibles",
             "type": "Descanso",
             "location": "Lobby del Centro de Extensión"
+        },
+        {
+            "id": "zerofox_talk",
+            "start_time": "14:40",
+            "end_time": "15:00",
+            "title": "Charla de ZeroFox",
+            "description": "Presentación sobre ciberseguridad y oportunidades laborales en ZeroFox",
+            "type": "Charla",
+            "location": "Salón de Eventos Principal"
         },
         {
             "id": "send_limit",
