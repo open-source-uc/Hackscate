@@ -2,6 +2,7 @@
 import "@/styles/global.css";
 
 import { BubbleBackground } from "@/components/animate-ui/components/backgrounds/bubble";
+import AnimatedBackground from "@/components/AnimatedBackground.astro";
 
 interface Props {
     title?: string;
@@ -18,20 +19,7 @@ const { title = "Hackscate Visualizer" } = Astro.props;
         <meta name="description" content="Hackscate 2025 - Visualizador" />
     </head>
     <body class="relative min-h-screen bg-background text-foreground overflow-hidden">
-        <BubbleBackground
-            client:only="react"
-            interactive={true}
-            className="absolute inset-0"
-            transition={{ stiffness: 150, damping: 30 }}
-            colors={{
-                first: '253,3,20',
-                second: '251,222,22',
-                third: '255,249,221',
-                fourth: '1,190,255',
-                fifth: '3,0,201',
-                sixth: '0,0,0',
-            }}
-        />
+        <AnimatedBackground />
         <div class="relative z-10 flex py-8 items-center justify-center min-h-screen">
             <slot />
         </div>
