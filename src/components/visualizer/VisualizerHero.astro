@@ -9,7 +9,7 @@ import SpotifyNowPlaying from "./SpotifyNowPlaying";
     <!-- Spotify Now Playing Section -->
     <section class="flex justify-center items-start pt-12 px-12">
         <div class="max-w-2xl w-full">
-            <SpotifyNowPlaying client:load />
+            <SpotifyNowPlaying client:only="react" />
         </div>
     </section>
 
@@ -20,12 +20,12 @@ import SpotifyNowPlaying from "./SpotifyNowPlaying";
         </h1>
 
         <div class=" max-w-4xl w-full">
-            <SponsorLoop client:load />
+            <SponsorLoop client:only="react" />
         </div>
     </section>
 
     <!-- Sponsor Slider Section -->
     <div class="w-full pb-16">
-        <SponsorSlider client:load />
+        <SponsorSlider client:only="react" />
     </div>
 </div>
