@@ -31,6 +31,6 @@ const eventDate = new Date("2025-12-05T08:40:00-03:00"); // Chile timezone (UTC-
     </div>
 
     <div class="mt-16">
-        <Countdown client:load targetDate={eventDate} />
+        <Countdown client:only="react" targetDate={eventDate} />
     </div>
 </section>

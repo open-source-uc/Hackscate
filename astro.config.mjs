@@ -10,7 +10,11 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
     site: 'https://hackscate.osuc.dev',
     output: 'server',
-    adapter: cloudflare(),
+    adapter: cloudflare({
+        platformProxy: {
+            enabled: true
+        }
+    }),
 
     i18n: {
         defaultLocale: 'es',
@@ -22,7 +26,10 @@ export default defineConfig({
     },
 
     vite: {
-        plugins: [tailwindcss()]
+        plugins: [tailwindcss()],
+        optimizeDeps: {
+            include: ['react', 'react-dom']
+        }
     },
 
     integrations: [react()]
