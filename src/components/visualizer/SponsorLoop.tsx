@@ -1,5 +1,5 @@
 import { TextLoop } from "@/components/ui/text-loop";
-import { Shield, GraduationCap, GithubIcon, Trophy } from "lucide-react";
+import { Shield, GraduationCap, GithubIcon, Trophy, Newspaper } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 interface SponsorOffer {
@@ -33,6 +33,12 @@ const sponsorOffers: SponsorOffer[] = [
     text: "Únete a la mayor comunidad de hackers estudiantes en ",
     url: "mlh.io",
     icon: Trophy,
+  },
+  {
+    sponsor: "OSUC",
+    text: "Conoce las bases de la hackathon en bases.osuc.dev",
+    url: "bases.osuc.dev",
+    icon: Newspaper,
   },
 ];
 
