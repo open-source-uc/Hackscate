@@ -1,21 +1,27 @@
 ---
 import SponsorLoop from "./SponsorLoop";
 import SponsorSlider from "./SponsorSlider";
+import Countdown from "@components/landing/Countdown";
+const eventDate = new Date("2025-12-05T17:00:00-03:00"); // Chile timezone (UTC-3)
 ---
 
 <div class="flex flex-col h-screen w-full">
-
     <div class="w-full pb-16">
         <SponsorSlider client:only="react" />
     </div>
 
     <!-- HACKSCATE Title Section -->
     <section class="flex flex-col items-center justify-center px-12 flex-1">
-        <h1 class="text-[4rem] tablet:text-[8rem] desktop:text-[12rem] font-bold font-width-wide text-foreground text-center leading-none">
+        <!-- <h1 class="text-[4rem] tablet:text-[8rem] desktop:text-[12rem] font-bold font-width-wide text-foreground text-center leading-none">
             HACKSCATE
+        </h1> -->
+        <h1
+            class="text-[4rem] font-bold font-width-wide text-foreground text-center leading-none"
+        >
+            TERMINA EN
         </h1>
-
-        <div class=" max-w-4xl w-full">
+        <Countdown client:only="react" targetDate={eventDate} />
+        <div class="max-w-4xl w-full">
             <SponsorLoop client:only="react" />
         </div>
     </section>
