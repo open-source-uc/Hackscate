@@ -36,7 +36,7 @@ const sponsorOffers: SponsorOffer[] = [
   },
   {
     sponsor: "OSUC",
-    text: "Conoce las bases de la hackathon en bases.osuc.dev",
+    text: "Conoce las bases de la hackathon en ",
     url: "bases.osuc.dev",
     icon: Newspaper,
   },
