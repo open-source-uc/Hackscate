@@ -1,85 +1,86 @@
 {
-    "schedule": [
-        {
-            "id": "registration",
-            "start_time": "08:40",
-            "end_time": "09:00",
-            "title": "Registro y Check-in",
-            "description": "Recepción de participantes y entrega de material",
-            "type": "Registración",
-            "location": "Entrada Centro de Extensión"
-        },
-        {
-            "id": "opening",
-            "start_time": "09:00",
-            "end_time": "09:20",
-            "title": "Ceremonia de Apertura",
-            "description": "Bienvenida oficial y presentación del evento",
-            "type": "Ceremonia",
-            "location": "Salón de Eventos Principal"
-        },
-        {
-            "id": "hacking-start",
-            "start_time": "09:20",
-            "end_time": "09:20",
-            "title": "¡Comienza el Hackathon!",
-            "description": "Los equipos comienzan a desarrollar sus proyectos",
-            "type": "Hacking",
-            "location": "Salón de Eventos Principal"
-        },
-        {
-            "id": "lunch",
-            "start_time": "14:00",
-            "end_time": "15:00",
-            "title": "Almuerzo",
-            "description": "Pausa para pizzas y bebestibles",
-            "type": "Descanso",
-            "location": "Lobby del Centro de Extensión"
-        },
-        {
-            "id": "zerofox_talk",
-            "start_time": "14:40",
-            "end_time": "15:00",
-            "title": "Charla de ZeroFox",
-            "description": "Presentación sobre ciberseguridad y oportunidades laborales en ZeroFox",
-            "type": "Charla",
-            "location": "Salón de Eventos Principal"
-        },
-        {
-            "id": "send_limit",
-            "start_time": "17:00",
-            "end_time": "17:00",
-            "title": "Límite de Envío de Proyectos",
-            "description": "Hora límite para enviar los proyectos desarrollados",
-            "type": "Límite",
-            "location": "Plataforma de Envío"
-        },
-        {
-            "id": "judgeing",
-            "start_time": "17:00",
-            "end_time": "17:30",
-            "title": "Los jurados evaluan los proyectos",
-            "description": "Los equipos presentan sus proyectos",
-            "type": "Evaluación",
-            "location": "Salón de Eventos Principal"
-        },
-        {
-            "id": "awards",
-            "start_time": "17:30",
-            "end_time": "17:50",
-            "title": "Ceremonia de Premiación",
-            "description": "Anuncio de ganadores y entrega de premios",
-            "type": "Ceremonia",
-            "location": "Salón de Eventos Principal"
-        },
-        {
-            "id": "closing",
-            "start_time": "17:50",
-            "end_time": "18:00",
-            "title": "Palabras de Clausura",
-            "description": "Cierre oficial del evento y agradecimientos",
-            "type": "Ceremonia",
-            "location": "Salón de Eventos Principal"
-        }
-    ]
+  "schedule": [
+    {
+      "id": "registration",
+      "start_time": "08:40",
+      "end_time": "09:00",
+      "title": "Registro y Check-in",
+      "description": "Recepción de participantes y entrega de material",
+      "type": "Registración",
+      "location": "Entrada Centro de Extensión"
+    },
+    {
+      "id": "opening",
+      "start_time": "09:00",
+      "end_time": "09:20",
+      "title": "Ceremonia de Apertura",
+      "description": "Bienvenida oficial y presentación del evento",
+      "type": "Ceremonia",
+      "location": "Salón de Eventos Principal"
+    },
+    {
+      "id": "hacking-start",
+      "start_time": "09:20",
+      "end_time": "09:20",
+      "title": "¡Comienza el Hackathon!",
+      "description": "Los equipos comienzan a desarrollar sus proyectos",
+      "type": "Hacking",
+      "location": "Salón de Eventos Principal"
+    },
+    {
+      "id": "lunch",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "title": "Almuerzo",
+      "description": "Pausa para pizzas y bebestibles",
+      "type": "Descanso",
+      "location": "Lobby del Centro de Extensión"
+    },
+    {
+      "id": "zerofox_talk",
+      "start_time": "14:40",
+      "end_time": "15:00",
+      "title": "Charla de ZeroFox",
+      "description": "Presentación sobre ciberseguridad y oportunidades laborales en ZeroFox",
+      "type": "Charla",
+      "location": "Salón de Eventos Principal"
+    },
+    {
+      "id": "send_limit",
+      "start_time": "17:00",
+      "end_time": "17:00",
+      "title": "Límite de Envío de Proyectos",
+      "description": "Hora límite para enviar los proyectos desarrollados",
+      "type": "Límite",
+      "location": "Plataforma de Envío"
+    },
+    {
+      "id": "judgeing",
+      "start_time": "17:00",
+      "end_time": "17:45",
+      "title": "Los jurados evaluan los proyectos",
+      "description": "Los equipos presentan sus proyectos",
+      "type": "Evaluación",
+      "location": "Salón de Eventos Principal"
+    },
+    {
+      "id": "awards",
+      "start_time": "17:45",
+      "end_time": "17:50",
+      "title": "Ceremonia de Premiación",
+      "description": "Anuncio de ganadores y entrega de premios",
+      "type": "Ceremonia",
+      "location": "Salón de Eventos Principal"
+    },
+    {
+      "id": "closing",
+      "start_time": "17:50",
+      "end_time": "18:00",
+      "title": "Palabras de Clausura",
+      "description": "Cierre oficial del evento y agradecimientos",
+      "type": "Ceremonia",
+      "location": "Salón de Eventos Principal"
+    }
+  ]
 }
+

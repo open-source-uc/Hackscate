@@ -1,85 +1,86 @@
 {
-    "schedule": [
-        {
-            "id": "registration",
-            "start_time": "08:40",
-            "end_time": "09:00",
-            "title": "Register and Check-in",
-            "description": "Reception of participants and distribution of materials",
-            "type": "Registration",
-            "location": "Entrance Centro de Extensión"
-        },
-        {
-            "id": "opening",
-            "start_time": "09:00",
-            "end_time": "09:20",
-            "title": "Opening Ceremony",
-            "description": "Official welcome and event presentation",
-            "type": "Ceremony",
-            "location": "Main Stage"
-        },
-        {
-            "id": "hacking-start",
-            "start_time": "09:20",
-            "end_time": "09:20",
-            "title": "Hackathon Begins!",
-            "description": "Teams start developing their projects",
-            "type": "Hacking",
-            "location": "Main Stage"
-        },
-        {
-            "id": "lunch",
-            "start_time": "14:00",
-            "end_time": "15:00",
-            "title": "Lunch",
-            "description": "Lunch with pizzas and drinks",
-            "type": "Break",
-            "location": "Centro de Extensión Lobby"
-        },
-        {
-            "id": "zerofox_talk",
-            "start_time": "14:40",
-            "end_time": "15:00",
-            "title": "ZeroFox Talk",
-            "description": "Presentation on cybersecurity and job opportunities at ZeroFox",
-            "type": "Talk",
-            "location": "Main Stage"
-        },
-        {
-            "id": "send_limit",
-            "start_time": "17:00",
-            "end_time": "17:00",
-            "title": "Project Submission Deadline",
-            "description": "Final time to submit developed projects",
-            "type": "Deadline",
-            "location": "Submission Platform"
-        },
-        {
-            "id": "judgeing",
-            "start_time": "17:00",
-            "end_time": "17:30",
-            "title": "Judges Evaluate Projects",
-            "description": "Teams present their projects",
-            "type": "Judging",
-            "location": "Main Stage"
-        },
-        {
-            "id": "awards",
-            "start_time": "17:30",
-            "end_time": "17:50",
-            "title": "Awards Ceremony",
-            "description": "Announcement of winners and prize distribution",
-            "type": "Ceremony",
-            "location": "Main Stage"
-        },
-        {
-            "id": "closing",
-            "start_time": "17:50",
-            "end_time": "18:00",
-            "title": "Closing Remarks",
-            "description": "Official closing of the event and acknowledgments",
-            "type": "Ceremony",
-            "location": "Main Stage"
-        }
-    ]
+  "schedule": [
+    {
+      "id": "registration",
+      "start_time": "08:40",
+      "end_time": "09:00",
+      "title": "Register and Check-in",
+      "description": "Reception of participants and distribution of materials",
+      "type": "Registration",
+      "location": "Entrance Centro de Extensión"
+    },
+    {
+      "id": "opening",
+      "start_time": "09:00",
+      "end_time": "09:20",
+      "title": "Opening Ceremony",
+      "description": "Official welcome and event presentation",
+      "type": "Ceremony",
+      "location": "Main Stage"
+    },
+    {
+      "id": "hacking-start",
+      "start_time": "09:20",
+      "end_time": "09:20",
+      "title": "Hackathon Begins!",
+      "description": "Teams start developing their projects",
+      "type": "Hacking",
+      "location": "Main Stage"
+    },
+    {
+      "id": "lunch",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "title": "Lunch",
+      "description": "Lunch with pizzas and drinks",
+      "type": "Break",
+      "location": "Centro de Extensión Lobby"
+    },
+    {
+      "id": "zerofox_talk",
+      "start_time": "14:40",
+      "end_time": "15:00",
+      "title": "ZeroFox Talk",
+      "description": "Presentation on cybersecurity and job opportunities at ZeroFox",
+      "type": "Talk",
+      "location": "Main Stage"
+    },
+    {
+      "id": "send_limit",
+      "start_time": "17:00",
+      "end_time": "17:00",
+      "title": "Project Submission Deadline",
+      "description": "Final time to submit developed projects",
+      "type": "Deadline",
+      "location": "Submission Platform"
+    },
+    {
+      "id": "judgeing",
+      "start_time": "17:00",
+      "end_time": "17:45",
+      "title": "Judges Evaluate Projects",
+      "description": "Teams present their projects",
+      "type": "Judging",
+      "location": "Main Stage"
+    },
+    {
+      "id": "awards",
+      "start_time": "17:45",
+      "end_time": "17:50",
+      "title": "Awards Ceremony",
+      "description": "Announcement of winners and prize distribution",
+      "type": "Ceremony",
+      "location": "Main Stage"
+    },
+    {
+      "id": "closing",
+      "start_time": "17:50",
+      "end_time": "18:00",
+      "title": "Closing Remarks",
+      "description": "Official closing of the event and acknowledgments",
+      "type": "Ceremony",
+      "location": "Main Stage"
+    }
+  ]
 }
+
