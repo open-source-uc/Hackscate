@@ -42,9 +42,9 @@ interface Props {
 
 export default function SponsorLoop(_props: Props) {
   return (
-    <div className="text-center mt-8">
+    <div className="text-center">
       <TextLoop
-        className="text-2xl tablet:text-3xl desktop:text-2xl font-semibold"
+        className="text-2xl tablet:text-3xl desktop:text-2xl m-8 font-semibold"
         interval={15}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
